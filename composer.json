@@ -5,7 +5,7 @@
         "yii", "yii2", "PHP",
         "asset", "bundle",
         "Start-Bootstrap", "sb-admin-2",
-        "backend", "admin", "ui", "user-interface", "PHP",
+        "backend", "admin", "ui", "user-interface", "theme"
     ],
     "authors": [
         {
