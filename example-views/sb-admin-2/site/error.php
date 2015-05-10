@@ -8,7 +8,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = $name;
 
-p2y2\sbAdminTheme\web\SBAdmin2Asset::register($this);
+p2made\sbAdminTheme\web\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

@@ -1,24 +1,38 @@
-p2y2sbAdminAsset
+p2y2sbAdminTheme
 ================
 
-*Backend UI for Yii2 Framework, based on [SB Admin](http://startbootstrap.com/template-overviews/sb-admin-2/)*
+SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
 
-This package contains an [Asset Bundle for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
-which registers the CSS files for the SB Admin 2 user-interface.
+p2y2sbAdminTheme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
+which registers the CSS & JS files for the SB Admin 2 UI.
+
+It declares `p2made/yii2-asset-collection` as a dependancy.
 
 Installation
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
-
-To install SB Admin run:
+The preferred way to install p2y2sbAdminTheme is through [composer](http://getcomposer.org/download/).
+Depending on your composer installation, run *one* of the following commands:
 
 ```
-php composer.phar require p2made/p2y2metisMenuAsset "*"
+composer require p2made/yii2-sb-admin-theme "dev-master"
 ```
 
+or
 
-The CSS files are installed via Yii's recommended usage of the `fxp/composer-asset-plugin`.
+```
+php composer.phar require p2made/yii2-sb-admin-theme "dev-master"
+```
+
+Alternatively add:
+
+```
+"p2made/yii2-sb-admin-theme": "dev-master"
+```
+
+to the requires section of your `composer.json` file & p2y2bootstrapSocialAsset will be installed next time you run `composer update`.
+
+The files are installed via Yii's recommended usage of the `fxp/composer-asset-plugin`.
 
 Quick Start
 -----------
@@ -30,7 +44,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2made/p2y2metisMenuAsset/example-views/sb-admin-2'
+					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/example-views/sb-admin-2'
 				],
 			],
 		],
@@ -53,6 +67,32 @@ To view the sample pages in `site/pages/` you need to modify `actions()` in the 
 		];
 	}
 
+Customization
+-------------
+
+- Copy files from `vendor/p2made/yii2-sb-admin-theme/example-views/sb-admin-2` (or other theme) to `@app/views`.
+- Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
+- Edit your views adhering to html markup `http://startbootstrap.com/template-overviews/sb-admin-2/` & the example views.
+
+Usage
+-----
+
+Register p2y2bootstrapSocialAsset in views with:
+
+```
+p2made\sbAdminTheme\AssetBundle::register($this);
+```
+
+& as a dependancy in assets with:
+
+```
+public $depends = [
+		// ...
+		'p2made\sbAdminTheme\AssetBundle',
+		// ...
+	];
+```
+
 Known Issues
 ------------
 
@@ -66,12 +106,5 @@ To Do
 - Calendar page.
 - Original SB Admin.
 
-Customization
--------------
 
-- Copy files from `vendor/p2made/p2y2metisMenuAsset/example-views/sb-admin-2` (or other theme) to `@app/views`.
-- Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
-- Edit your views adhering to html markup `http://startbootstrap.com/template-overviews/sb-admin-2/`
-
-> Namespacing rules follow the Yii 2.0 framework structure, eg. `sbadmin\web` for the Asset Bundles.
 

@@ -1,6 +1,6 @@
 <?php
 use yii\widgets\Breadcrumbs;
-use p2y2\sbAdminTheme\widgets\Alert;
+use p2made\sbAdminTheme\widgets\Alert;
 ?>
 <div id="page-wrapper">
 	<header class="row">

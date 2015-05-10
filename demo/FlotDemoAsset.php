@@ -1,5 +1,5 @@
 <?php
-namespace p2y2\sbAdminTheme\demo;
+namespace p2made\sbAdminTheme\demo;
 
 use yii\web\AssetBundle;
 
@@ -9,14 +9,9 @@ use yii\web\AssetBundle;
  */
 class FlotDemoAsset extends AssetBundle
 {
-	public $sourcePath = '@p2y2/sbAdminTheme/data';
-	public $css = [
-	];
+	public $sourcePath = '@vendor/p2made/yii2-sb-admin-theme/data';
+
 	public $js = [
 		'flot-data.js'
-	];
-	public $depends = [
-		'yii\web\YiiAsset',
-		'yii\bootstrap\BootstrapPluginAsset',
 	];
 }

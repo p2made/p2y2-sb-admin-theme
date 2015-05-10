@@ -8,10 +8,10 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Tables';
 
-p2y2\metisMenuAsset\AssetBundle::register($this);
-p2y2\dataTablesAsset\AssetBundle::register($this);
-p2y2\sbAdminTheme\web\SBAdmin2Asset::register($this);
-p2y2\sbAdminTheme\demo\DataTablesAsset::register($this);
+p2made\assets\pub\MetisMenuAsset::register($this);
+p2made\assets\pub\DataTablesAsset::register($this);
+p2made\sbAdminTheme\web\SBAdmin2Asset::register($this);
+p2made\sbAdminTheme\demo\DataTablesAsset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

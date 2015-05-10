@@ -1,5 +1,5 @@
 <?php
-namespace p2y2\sbAdminTheme\web;
+namespace p2made\sbAdminTheme\web;
 
 /**
  * SB Admin AssetBundle
@@ -7,12 +7,15 @@ namespace p2y2\sbAdminTheme\web;
  */
 class SBAdminAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@p2y2/sbAdminTheme/assets/start-bootstrap';
+	public $sourcePath = '@vendor/p2made/yii2-sb-admin-theme/assets';
+
 	public $css = [
 		'css/sb-admin.min.css',
 	];
+
 	public $js = [
 	];
+
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapPluginAsset',

@@ -8,8 +8,8 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Forms';
 
-p2y2\metisMenuAsset\AssetBundle::register($this);
-p2y2\sbAdminTheme\web\SBAdmin2Asset::register($this);
+p2made\assets\pub\MetisMenuAsset::register($this);
+p2made\sbAdminTheme\web\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

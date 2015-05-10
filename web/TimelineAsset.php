@@ -1,5 +1,5 @@
 <?php
-namespace p2y2\sbAdminTheme\web;
+namespace p2made\sbAdminTheme\web;
 
 /**
  * Timeline AssetBundle
@@ -7,8 +7,8 @@ namespace p2y2\sbAdminTheme\web;
  */
 class TimelineAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@p2y2/sbAdminTheme/assets/timeline';
-	//public $sourcePath = null;
+	public $sourcePath = '@vendor/p2made/yii2-sb-admin-theme/assets';
+
 	public $css = [
 		'css/timeline.css',
 		//'//cdnjs.cloudflare.com/ajax/libs/timelinejs/2.35.6/css/timeline.css',

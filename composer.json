@@ -1,6 +1,7 @@
 {
     "name": "p2made/yii2-sb-admin-theme",
-    "description": "Backend theme for Yii2 Framework",
+    "description": "SB Admin from Start Bootstrap, http://startbootstrap.com/, as a backend UI for Yii 2 Framework.",
+    "version": "0.1.0",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","adminlte"],
     "license": "BSD-3-Clause",
@@ -27,18 +28,11 @@
         "onokumus/metismenu": "2.*",
         "philippfrenzel/yii2fullcalendar": "*",
         "rmrevin/yii2-fontawesome": "2.9.*",
-        "p2made/yii2-bootstrap-social-asset": "dev-master",
-        "p2made/yii2-datatables-asset": "dev-master",
-        "p2made/yii2-flot-charts-asset": "dev-master",
-        "p2made/yii2-metis-menu-asset": "dev-master",
-        "p2made/yii2-morris-asset": "dev-master",
-        "p2made/yii2-raphael-asset": "dev-master",
-        "p2made/yii2-sweetalert-asset": "dev-master",
-        "p2made/yii2-html5shiv-asset": "dev-master"
+        "p2made/yii2-asset-collection": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "p2y2\\sbAdminTheme\\": ""
+            "p2made\\sbAdminTheme\\": ""
         }
     }
 }
