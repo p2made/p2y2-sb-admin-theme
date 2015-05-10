@@ -1,5 +1,5 @@
 <?php
-namespace p2made\sbAdminTheme\web;
+namespace p2made\yii2theme\sbAdmin\web;
 
 /**
  * SB Admin 2 AssetBundle
