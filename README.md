@@ -74,25 +74,6 @@ Customization
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to html markup `http://startbootstrap.com/template-overviews/sb-admin-2/` & the example views.
 
-Usage
------
-
-Register p2y2bootstrapSocialAsset in views with:
-
-```
-p2made\sbAdminTheme\AssetBundle::register($this);
-```
-
-& as a dependancy in assets with:
-
-```
-public $depends = [
-		// ...
-		'p2made\sbAdminTheme\AssetBundle',
-		// ...
-	];
-```
-
 Known Issues
 ------------
 
