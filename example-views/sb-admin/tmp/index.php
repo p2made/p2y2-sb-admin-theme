@@ -1,87 +1,172 @@
-<?php
-use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
+<body>
+		<div class="wrapper">
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-$this->title = 'Dashboard';
+			<div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="/">P<sup>2</sup>SB Admin</a>	<!-- <a class="navbar-brand" href="/">My Application</a> -->
+</div>
 
-// being really pedantic about asset order...
-p2made\yii2theme\sbAdmin\web\SBAdminAsset::register($this);
-p2made\assets\pub\MorrisAsset::register($this);
-p2made\assets\cdn\Html5shivAsset::register($this);
+<ul class="nav navbar-right top-nav">
+	<li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			<i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+			<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu message-dropdown">
+			<li class="message-preview">
+				<a href="#">
+					<div class="media">
+						<span class="pull-left">
+							<img class="media-object" src="http://placehold.it/50x50" alt="">
+						</span>
+						<div class="media-body">
+							<h5 class="media-heading"><strong>John Smith</strong>
+							</h5>
+							<p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="message-preview">
+				<a href="#">
+					<div class="media">
+						<span class="pull-left">
+							<img class="media-object" src="http://placehold.it/50x50" alt="">
+						</span>
+						<div class="media-body">
+							<h5 class="media-heading"><strong>John Smith</strong>
+							</h5>
+							<p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="message-preview">
+				<a href="#">
+					<div class="media">
+						<span class="pull-left">
+							<img class="media-object" src="http://placehold.it/50x50" alt="">
+						</span>
+						<div class="media-body">
+							<h5 class="media-heading"><strong>John Smith</strong>
+							</h5>
+							<p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li class="message-footer">
+				<a href="#">Read All New Messages</a>
+			</li>
+		</ul><!-- /.message-dropdown -->
+	</li><!-- /.dropdown -->
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+		<ul class="dropdown-menu alert-dropdown">
+			<li>
+				<a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="#">View All</a>
+			</li>
+		</ul>
+	</li><!-- /.dropdown -->
+	<li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+			</li>
+			<li class="divider"></li>
+			<li>
+				<a href="/site/logout.p2m" data-method="post"><i class="fa fa-power-off fa-fw"></i> Logout</a>			</li>
+		</ul>
+	</li><!-- /.dropdown -->
+</ul>
 
-// DEMO ONLY _DON'T_ use this in your production copy.
-p2made\yii2theme\sbAdmin\demo\MorrisDemoAsset::register($this);
+			<section class="collapse navbar-collapse navbar-ex1-collapse" role="navigation">
+	<ul class="nav navbar-nav side-nav">
+		<li><a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li><!-- Dashboard -->
+		<li>
+			<a href="charts.php"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
+		</li><!-- Charts -->
+		<li>
+			<a href="tables.php"><i class="fa fa-fw fa-table"></i> Tables</a>
+		</li><!-- Tables -->
+		<li>
+			<a href="forms.php"><i class="fa fa-fw fa-edit"></i> Forms</a>
+		</li><!-- Forms -->
+		<li>
+			<a href="bootstrap-elements.php"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+		</li><!-- Bootstrap Elements -->
+		<li>
+			<a href="bootstrap-grid.php"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+		</li><!-- Bootstrap Grid -->
+		<li>
+			<a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+			<ul id="demo" class="collapse">
+				<li>
+					<a href="#">Dropdown Item</a>
+				</li>
+				<li>
+					<a href="#">Dropdown Item</a>
+				</li>
+			</ul>
+		</li><!-- Dropdown -->
+		<li>
+			<a href="blank-page.php"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+		</li><!-- Blank Page -->
+		<li>
+			<a href="index-rtl.php"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+		</li><!-- RTL Dashboard -->
+	</ul>
+</section>
 
-/* pub
-p2made\yii2theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\yii2theme\sbAdmin\web\SBAdmin2UserAsset::register($this);
-p2made\yii2theme\sbAdmin\web\SBAdminAsset::register($this);
-p2made\yii2theme\sbAdmin\web\TimelineAsset::register($this);
+		</nav>
 
-p2made\assets\pub\BootstrapSocialAsset::register($this);
-p2made\assets\pub\DataTablesAsset::register($this);
-p2made\assets\pub\ExcanvasAsset::register($this);
-p2made\assets\pub\FlotChartsAsset::register($this);
-p2made\assets\pub\FlotTooltipAsset::register($this);
-p2made\assets\pub\FullCalendarAsset::register($this);
-p2made\assets\pub\Html5shivAsset::register($this);
-p2made\assets\pub\MetisMenuAsset::register($this);
-p2made\assets\pub\MomentAsset::register($this);
-p2made\assets\pub\MomentTimezoneAsset::register($this);
-p2made\assets\pub\MorrisAsset::register($this);
-p2made\assets\pub\RaphaelAsset::register($this);
-p2made\assets\pub\SweetAlertAsset::register($this);
+		<div id="page-wrapper">
+	<div class="container-fluid">
+		<header class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">
+					Dashboard <small></small>
+				</h1>
+											</div>
+		</header>
 
-		'p2made\assets\pub\BootstrapSocialAsset',
-		'p2made\assets\pub\DataTablesAsset',
-		'p2made\assets\pub\ExcanvasAsset',
-		'p2made\assets\pub\FlotChartsAsset',
-		'p2made\assets\pub\FlotTooltipAsset',
-		'p2made\assets\pub\FullCalendarAsset',
-		'p2made\assets\pub\Html5shivAsset',
-		'p2made\assets\pub\MetisMenuAsset',
-		'p2made\assets\pub\MomentAsset',
-		'p2made\assets\pub\MomentTimezoneAsset',
-		'p2made\assets\pub\MorrisAsset',
-		'p2made\assets\pub\RaphaelAsset',
-		'p2made\assets\pub\SweetAlertAsset',
- */
-
-/* cdn
-p2made\assets\cdn\BootstrapSocialAsset::register($this);
-p2made\assets\cdn\DataTablesAsset::register($this);
-p2made\assets\cdn\ExcanvasAsset::register($this);
-p2made\assets\cdn\FlotChartsAsset::register($this);
-p2made\assets\cdn\FlotTooltipAsset::register($this);
-p2made\assets\cdn\FullCalendarAsset::register($this);
-p2made\assets\cdn\Html5shivAsset::register($this);
-p2made\assets\cdn\MetisMenuAsset::register($this);
-p2made\assets\cdn\MomentAsset::register($this);
-p2made\assets\cdn\MomentTimezoneAsset::register($this);
-p2made\assets\cdn\MorrisAsset::register($this);
-p2made\assets\cdn\RaphaelAsset::register($this);
-p2made\assets\cdn\SweetAlertAsset::register($this);
-
-		'p2made\assets\cdn\BootstrapSocialAsset',
-		'p2made\assets\cdn\DataTablesAsset',
-		'p2made\assets\cdn\ExcanvasAsset',
-		'p2made\assets\cdn\FlotChartsAsset',
-		'p2made\assets\cdn\FlotTooltipAsset',
-		'p2made\assets\cdn\FullCalendarAsset',
-		'p2made\assets\cdn\Html5shivAsset',
-		'p2made\assets\cdn\MetisMenuAsset',
-		'p2made\assets\cdn\MomentAsset',
-		'p2made\assets\cdn\MomentTimezoneAsset',
-		'p2made\assets\cdn\MorrisAsset',
-		'p2made\assets\cdn\RaphaelAsset',
-		'p2made\assets\cdn\SweetAlertAsset',
- */
-?>
-<div id="content-wrapper">
+		<div id="content-wrapper">
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="alert alert-info alert-dismissable">
@@ -332,30 +417,8 @@ p2made\assets\cdn\SweetAlertAsset::register($this);
 	</div>
 </div><!-- /#content-wrapper -->
 
------ ^ ----- ^ ----- ^ ----- ^ ----- ^ -----
+	</div>
+</div>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<title>SB Admin - Bootstrap Admin Template</title>
-
-	<!-- Bootstrap Core CSS -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-	<!-- Custom CSS -->
-	<link href="../assets/css/sb/sb-admin.css" rel="stylesheet" type="text/css">
-
-	<!-- Morris Charts CSS -->
-	<link href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css" rel="stylesheet" type="text/css">
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-</head>
+	</div>
+</body>

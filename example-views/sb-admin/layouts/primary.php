@@ -14,7 +14,7 @@ use yii\helpers\Html;
 	<?php $this->beginBody() ?>
 	<div class="wrapper">
 
-		<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
 			<?= $this->render('navigation-top.php', []) ?>
 

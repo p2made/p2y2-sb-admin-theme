@@ -7,218 +7,120 @@ use yii\bootstrap\NavBar;
 /* @var $content string */
 ?>
 <div class="navbar-header">
-	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 		<span class="sr-only">Toggle navigation</span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-	<?= Html::a('SB Admin v2.0', Yii::$app->homeUrl, ['class' => 'navbar-brand']) ?>
+	<?= Html::a('P<sup>2</sup>SB Admin', Yii::$app->homeUrl, ['class' => 'navbar-brand']) ?>
 	<!-- <?= Html::a(Yii::$app->name, Yii::$app->homeUrl, ['class' => 'navbar-brand']) ?> -->
 </div>
 
-<ul class="nav navbar-top-links navbar-right">
+<ul class="nav navbar-right top-nav">
 	<li class="dropdown">
 		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 			<i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+			<b class="caret"></b>
 		</a>
-		<ul class="dropdown-menu dropdown-messages">
-			<li>
+		<ul class="dropdown-menu message-dropdown">
+			<li class="message-preview">
 				<a href="#">
-					<div>
-						<strong>John Smith</strong>
-						<span class="pull-right text-muted">
-							<em>Yesterday</em>
+					<div class="media">
+						<span class="pull-left">
+							<img class="media-object" src="http://placehold.it/50x50" alt="">
 						</span>
+						<div class="media-body">
+							<h5 class="media-heading"><strong>John Smith</strong>
+							</h5>
+							<p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+						</div>
 					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
 				</a>
 			</li>
-			<li class="divider"></li>
-			<li>
+			<li class="message-preview">
 				<a href="#">
-					<div>
-						<strong>John Smith</strong>
-						<span class="pull-right text-muted">
-							<em>Yesterday</em>
+					<div class="media">
+						<span class="pull-left">
+							<img class="media-object" src="http://placehold.it/50x50" alt="">
 						</span>
+						<div class="media-body">
+							<h5 class="media-heading"><strong>John Smith</strong>
+							</h5>
+							<p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+						</div>
 					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
 				</a>
 			</li>
-			<li class="divider"></li>
-			<li>
+			<li class="message-preview">
 				<a href="#">
-					<div>
-						<strong>John Smith</strong>
-						<span class="pull-right text-muted">
-							<em>Yesterday</em>
+					<div class="media">
+						<span class="pull-left">
+							<img class="media-object" src="http://placehold.it/50x50" alt="">
 						</span>
+						<div class="media-body">
+							<h5 class="media-heading"><strong>John Smith</strong>
+							</h5>
+							<p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+							<p>Lorem ipsum dolor sit amet, consectetur...</p>
+						</div>
 					</div>
-					<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
 				</a>
 			</li>
-			<li class="divider"></li>
-			<li>
-				<a class="text-center" href="#">
-					<strong>Read All Messages</strong>
-					<i class="fa fa-angle-right"></i>
-				</a>
+			<li class="message-footer">
+				<a href="#">Read All New Messages</a>
 			</li>
-		</ul><!-- /.dropdown-messages -->
+		</ul><!-- /.message-dropdown -->
 	</li><!-- /.dropdown -->
 	<li class="dropdown">
-		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-			<i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
-		</a>
-		<ul class="dropdown-menu dropdown-tasks">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+		<ul class="dropdown-menu alert-dropdown">
 			<li>
-				<a href="#">
-					<div>
-						<p>
-							<strong>Task 1</strong>
-							<span class="pull-right text-muted">40% Complete</span>
-						</p>
-						<div class="progress progress-striped active">
-							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-								<span class="sr-only">40% Complete (success)</span>
-							</div>
-						</div>
-					</div>
-				</a>
+				<a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+			</li>
+			<li>
+				<a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
 			</li>
 			<li class="divider"></li>
 			<li>
-				<a href="#">
-					<div>
-						<p>
-							<strong>Task 2</strong>
-							<span class="pull-right text-muted">20% Complete</span>
-						</p>
-						<div class="progress progress-striped active">
-							<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-								<span class="sr-only">20% Complete</span>
-							</div>
-						</div>
-					</div>
-				</a>
+				<a href="#">View All</a>
 			</li>
-			<li class="divider"></li>
-			<li>
-				<a href="#">
-					<div>
-						<p>
-							<strong>Task 3</strong>
-							<span class="pull-right text-muted">60% Complete</span>
-						</p>
-						<div class="progress progress-striped active">
-							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-								<span class="sr-only">60% Complete (warning)</span>
-							</div>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="divider"></li>
-			<li>
-				<a href="#">
-					<div>
-						<p>
-							<strong>Task 4</strong>
-							<span class="pull-right text-muted">80% Complete</span>
-						</p>
-						<div class="progress progress-striped active">
-							<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-								<span class="sr-only">80% Complete (danger)</span>
-							</div>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="divider"></li>
-			<li>
-				<a class="text-center" href="#">
-					<strong>See All Tasks</strong>
-					<i class="fa fa-angle-right"></i>
-				</a>
-			</li>
-		</ul><!-- /.dropdown-tasks -->
+		</ul>
 	</li><!-- /.dropdown -->
 	<li class="dropdown">
-		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-			<i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
-		</a>
-		<ul class="dropdown-menu dropdown-alerts">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
+		<ul class="dropdown-menu">
 			<li>
-				<a href="#">
-					<div>
-						<i class="fa fa-comment fa-fw"></i> New Comment
-						<span class="pull-right text-muted small">4 minutes ago</span>
-					</div>
-				</a>
+				<a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
 			</li>
-			<li class="divider"></li>
 			<li>
-				<a href="#">
-					<div>
-						<i class="fa fa-twitter fa-fw"></i> 3 New Followers
-						<span class="pull-right text-muted small">12 minutes ago</span>
-					</div>
-				</a>
+				<a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
 			</li>
-			<li class="divider"></li>
 			<li>
-				<a href="#">
-					<div>
-						<i class="fa fa-envelope fa-fw"></i> Message Sent
-						<span class="pull-right text-muted small">4 minutes ago</span>
-					</div>
-				</a>
-			</li>
-			<li class="divider"></li>
-			<li>
-				<a href="#">
-					<div>
-						<i class="fa fa-tasks fa-fw"></i> New Task
-						<span class="pull-right text-muted small">4 minutes ago</span>
-					</div>
-				</a>
-			</li>
-			<li class="divider"></li>
-			<li>
-				<a href="#">
-					<div>
-						<i class="fa fa-upload fa-fw"></i> Server Rebooted
-						<span class="pull-right text-muted small">4 minutes ago</span>
-					</div>
-				</a>
-			</li>
-			<li class="divider"></li>
-			<li>
-				<a class="text-center" href="#">
-					<strong>See All Alerts</strong>
-					<i class="fa fa-angle-right"></i>
-				</a>
-			</li>
-		</ul><!-- /.dropdown-alerts -->
-	</li><!-- /.dropdown -->
-	<li class="dropdown">
-		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-			<i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
-		</a>
-		<ul class="dropdown-menu dropdown-user">
-			<li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-			</li>
-			<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+				<a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
 			</li>
 			<li class="divider"></li>
 			<li>
 				<?= Html::a(
-					'<i class="fa fa-sign-out fa-fw"></i> Logout',
+					'<i class="fa fa-power-off fa-fw"></i> Logout',
 					['/site/logout'],
 					['data-method' => 'post']
 				) ?>
 			</li>
-		</ul><!-- /.dropdown-user -->
+		</ul>
 	</li><!-- /.dropdown -->
 </ul>

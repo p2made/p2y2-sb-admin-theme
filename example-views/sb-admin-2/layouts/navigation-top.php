@@ -13,7 +13,7 @@ use yii\bootstrap\NavBar;
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-	<?= Html::a('SB Admin v2.0', Yii::$app->homeUrl, ['class' => 'navbar-brand']) ?>
+	<?= Html::a('P<sup>2</sup>SB Admin v2.0', Yii::$app->homeUrl, ['class' => 'navbar-brand']) ?>
 	<!-- <?= Html::a(Yii::$app->name, Yii::$app->homeUrl, ['class' => 'navbar-brand']) ?> -->
 </div>
 

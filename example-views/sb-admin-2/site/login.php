@@ -21,7 +21,7 @@ $fieldOptions2 = [
 
 <div class="sb-box">
 	<div class="sb-logo">
-		<?= Html::a('SB <b>Admin</b>', Yii::$app->homeUrl) ?>
+		<?= Html::a('<b>P<sup>2</sup>SB</b> Admin v2.0', Yii::$app->homeUrl) ?>
 	</div>
 	<div class="sb-box-body panel panel-default">
 		<div class="panel-body">
