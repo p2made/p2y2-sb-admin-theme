@@ -6,7 +6,7 @@ SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for 
 p2y2sbAdminTheme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
 which registers the CSS & JS files for the SB Admin 2 UI.
 
-It declares `p2made/yii2-asset-collection` as a dependancy.
+It declares [`p2made/yii2-asset-collection`](https://github.com/p2made/yii2-asset-collection) as a dependancy.
 
 Installation
 ------------
