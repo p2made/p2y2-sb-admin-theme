@@ -1,9 +1,9 @@
-p2y2sbAdminTheme
-================
+sbAdminTheme
+============
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
 
-p2y2sbAdminTheme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
+sbAdminTheme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
 which registers the CSS & JS files for the SB Admin 2 UI.
 
 It declares [`p2made/yii2-asset-collection`](https://github.com/p2made/yii2-asset-collection) as a dependancy.
@@ -11,7 +11,7 @@ It declares [`p2made/yii2-asset-collection`](https://github.com/p2made/yii2-asse
 Installation
 ------------
 
-The preferred way to install p2y2sbAdminTheme is through [composer](http://getcomposer.org/download/).
+The preferred way to install sbAdminTheme is through [composer](http://getcomposer.org/download/).
 Depending on your composer installation, run *one* of the following commands:
 
 ```
@@ -21,7 +21,7 @@ composer require p2made/yii2-sb-admin-theme "dev-master"
 or
 
 ```
-php composer.phar require p2made/yii2-sb-admin-theme "dev-master"
+php composer.phar require p2made/yii2-sb-admin-theme "1.*"
 ```
 
 Alternatively add:

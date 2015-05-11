@@ -1,7 +1,7 @@
 {
     "name": "p2made/yii2-sb-admin-theme",
     "type": "yii2-extension",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "license": "MIT",
 
     "description": "SB Admin from Start Bootstrap, http://startbootstrap.com/, as a backend UI for Yii 2 Framework.",
