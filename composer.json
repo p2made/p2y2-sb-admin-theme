@@ -24,13 +24,7 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "2.0.*",
-        "bower-asset/moment" : "*",
-        "bower-asset/moment-timezone" : "*",
-        "datatables/datatables": "1.*",
-        "onokumus/metismenu": "2.*",
-        "philippfrenzel/yii2fullcalendar": "*",
-        "rmrevin/yii2-fontawesome": "2.9.*",
-        "p2made/yii2-asset-collection": "dev-master"
+        "p2made/yii2-asset-collection": "1.*"
     },
     "autoload": {
         "psr-4": {
