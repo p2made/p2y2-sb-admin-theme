@@ -3,6 +3,7 @@
     "type": "yii2-extension",
     "version": "1.0.0",
     "license": "MIT",
+
     "description": "SB Admin from Start Bootstrap, http://startbootstrap.com/, as a backend UI for Yii 2 Framework.",
     "keywords": [
         "yii", "yii2", "PHP",
@@ -12,28 +13,20 @@
     ],
     "authors": [
         {
-            "name": "Pedro Plowman",
-            "web": "https://github.com/p2made"
-        }
-    ],
-    "minimum-stability": "dev",
-    "authors": [
-        {
             "name": "Pedro Plwoman",
             "email": "pedro@p2made.net.au",
             "homepage": "http://p2made.net.au/"
         }
     ],
+
+    "minimum-stability": "dev",
+
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "2.0.*",
         "bower-asset/moment" : "*",
         "bower-asset/moment-timezone" : "*",
         "datatables/datatables": "1.*",
-        "kartik-v/yii2-datecontrol": "*",
-        "kartik-v/yii2-field-range": "*",
-        "kartik-v/yii2-social": "*",
-        "kartik-v/yii2-widgets": "*",
         "onokumus/metismenu": "2.*",
         "philippfrenzel/yii2fullcalendar": "*",
         "rmrevin/yii2-fontawesome": "2.9.*",
