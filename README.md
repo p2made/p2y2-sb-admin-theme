@@ -15,19 +15,19 @@ The preferred way to install sbAdminTheme is through [composer](http://getcompos
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-sb-admin-theme "dev-master"
+composer require p2made/yii2-sb-admin-theme "*"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-sb-admin-theme "1.*"
+php composer.phar require p2made/yii2-sb-admin-theme "*"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-sb-admin-theme": "dev-master"
+"p2made/yii2-sb-admin-theme": "*"
 ```
 
 to the requires section of your `composer.json` file & p2y2bootstrapSocialAsset will be installed next time you run `composer update`.
