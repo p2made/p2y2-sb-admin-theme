@@ -10,19 +10,19 @@ $this->title = 'Dashboard';
 
 // being really pedantic about asset order...
 p2made\assets\pub\MetisMenuAsset::register($this);
-p2made\yii2theme\sbAdmin\web\TimelineAsset::register($this);
-p2made\yii2theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\web\TimelineAsset::register($this);
+p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 p2made\assets\pub\MorrisAsset::register($this);
 p2made\assets\cdn\Html5shivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\yii2theme\sbAdmin\demo\MorrisDemoAsset::register($this);
+p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
 
 /* pub
-p2made\yii2theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\yii2theme\sbAdmin\web\SBAdmin2UserAsset::register($this);
-p2made\yii2theme\sbAdmin\web\SBAdminAsset::register($this);
-p2made\yii2theme\sbAdmin\web\TimelineAsset::register($this);
+p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\web\SBAdmin2UserAsset::register($this);
+p2made\theme\sbAdmin\web\SBAdminAsset::register($this);
+p2made\theme\sbAdmin\web\TimelineAsset::register($this);
 
 p2made\assets\pub\BootstrapSocialAsset::register($this);
 p2made\assets\pub\DataTablesAsset::register($this);

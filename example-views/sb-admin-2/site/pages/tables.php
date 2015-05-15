@@ -10,8 +10,8 @@ $this->title = 'Tables';
 
 p2made\assets\pub\MetisMenuAsset::register($this);
 p2made\assets\pub\DataTablesAsset::register($this);
-p2made\yii2theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\yii2theme\sbAdmin\demo\DataTablesAsset::register($this);
+p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\demo\DataTablesAsset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

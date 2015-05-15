@@ -1,29 +1,27 @@
 {
     "name": "p2made/yii2-sb-admin-theme",
-    "type": "yii2-extension",
-    "version": "1.0.0",
-    "license": "MIT",
-
     "description": "SB Admin from Start Bootstrap, http://startbootstrap.com/, as a backend UI for Yii 2 Framework.",
+    "type": "yii2-extension",
     "keywords": [
-        "yii", "yii2", "PHP",
+        "yii2", "yii", "extension", "PHP",
         "asset", "bundle",
         "Start-Bootstrap", "sb-admin-2",
         "backend", "admin", "ui", "user-interface", "theme"
     ],
+    "license": "MIT",
     "authors": [
         {
-            "name": "Pedro Plwoman",
-            "email": "pedro@p2made.net.au",
-            "homepage": "http://p2made.net.au/"
+            "name": "Pedro Plowman",
+            "email": "p2opensource@gmail.com",
+            "homepage": "https://github.com/p2made"
         }
     ],
 
+    "version": "1.0.0",
     "minimum-stability": "dev",
 
     "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "2.0.*",
+        "yiisoft/yii2": "*",
         "p2made/yii2-asset-collection": "1.*"
     },
     "autoload": {

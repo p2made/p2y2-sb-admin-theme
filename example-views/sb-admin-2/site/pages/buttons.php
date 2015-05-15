@@ -9,7 +9,7 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Buttons';
 
 p2made\assets\pub\BootstrapSocialAsset::register($this);
-p2made\yii2theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

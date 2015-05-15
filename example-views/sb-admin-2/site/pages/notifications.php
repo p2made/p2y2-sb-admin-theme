@@ -10,8 +10,8 @@ $this->title = 'Notifications';
 
 p2made\assets\pub\MetisMenuAsset::register($this);
 p2made\assets\pub\SweetAlertAsset::register($this);
-p2made\yii2theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\yii2theme\sbAdmin\demo\SweetAlertDemoAsset::register($this);
+p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\demo\SweetAlertDemoAsset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

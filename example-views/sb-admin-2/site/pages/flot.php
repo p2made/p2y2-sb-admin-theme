@@ -8,10 +8,10 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Flot Charts';
 
-p2made\yii2theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 p2made\assets\pub\MorrisAsset::register($this);
 p2made\assets\pub\FlotChartsAsset::register($this);
-p2made\yii2theme\sbAdmin\demo\FlotDemoAsset::register($this);
+p2made\theme\sbAdmin\demo\FlotDemoAsset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

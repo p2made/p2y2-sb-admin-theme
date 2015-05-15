@@ -1,5 +1,5 @@
 <?php
-namespace p2made\yii2theme\sbAdmin\demo;
+namespace p2made\theme\sbAdmin\demo;
 
 use yii\web\AssetBundle;
 

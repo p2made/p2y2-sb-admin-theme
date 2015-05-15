@@ -5,7 +5,7 @@
  * @license http://www.yiiframework.com/license/
  */
 
-namespace p2made\yii2theme\sbAdmin\widgets;
+namespace p2made\theme\sbAdmin\widgets;
 
 use \yii\bootstrap\Alert as BootstrapAlert;
 use \yii\bootstrap\Widget;

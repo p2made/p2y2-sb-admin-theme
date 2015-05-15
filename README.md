@@ -1,9 +1,9 @@
-sbAdminTheme
-============
+sbAdmin Theme
+=============
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
 
-sbAdminTheme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
+sbAdmin Theme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
 which registers the CSS & JS files for the SB Admin 2 UI.
 
 It declares [`p2made/yii2-asset-collection`](https://github.com/p2made/yii2-asset-collection) as a dependancy.
@@ -11,7 +11,7 @@ It declares [`p2made/yii2-asset-collection`](https://github.com/p2made/yii2-asse
 Installation
 ------------
 
-The preferred way to install sbAdminTheme is through [composer](http://getcomposer.org/download/).
+The preferred way to install sbAdmin Theme is through [composer](http://getcomposer.org/download/).
 Depending on your composer installation, run *one* of the following commands:
 
 ```
@@ -51,7 +51,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 	],
 ```
 
-This asset bundle provides sample files for layout and view (see folder `examples/`), they are **not meant to be customized directly in the `vendor/` folder**.
+This asset bundle provides sample files for layout and view (see folder `example-views/`), they are **not meant to be customized directly in the `vendor/` folder**. If you do that, your changes will be lost next time you run `composer update`.
 
 Therefore it is recommended to **copy the views into your application** and adjust them to your needs.
 
