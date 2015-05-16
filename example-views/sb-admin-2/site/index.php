@@ -13,7 +13,7 @@ p2made\assets\MetisMenuAsset::register($this);
 p2made\theme\sbAdmin\web\TimelineAsset::register($this);
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 p2made\assets\MorrisAsset::register($this);
-p2made\assets\cdn\Html5shivAsset::register($this);
+p2made\assets\Html5shivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
