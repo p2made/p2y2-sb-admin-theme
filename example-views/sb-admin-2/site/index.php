@@ -9,10 +9,10 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Dashboard';
 
 // being really pedantic about asset order...
-p2made\assets\pub\MetisMenuAsset::register($this);
+p2made\assets\MetisMenuAsset::register($this);
 p2made\theme\sbAdmin\web\TimelineAsset::register($this);
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\assets\pub\MorrisAsset::register($this);
+p2made\assets\MorrisAsset::register($this);
 p2made\assets\cdn\Html5shivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
@@ -24,63 +24,33 @@ p2made\theme\sbAdmin\web\SBAdmin2UserAsset::register($this);
 p2made\theme\sbAdmin\web\SBAdminAsset::register($this);
 p2made\theme\sbAdmin\web\TimelineAsset::register($this);
 
-p2made\assets\pub\BootstrapSocialAsset::register($this);
-p2made\assets\pub\DataTablesAsset::register($this);
-p2made\assets\pub\ExcanvasAsset::register($this);
-p2made\assets\pub\FlotChartsAsset::register($this);
-p2made\assets\pub\FlotTooltipAsset::register($this);
-p2made\assets\pub\FullCalendarAsset::register($this);
-p2made\assets\pub\Html5shivAsset::register($this);
-p2made\assets\pub\MetisMenuAsset::register($this);
-p2made\assets\pub\MomentAsset::register($this);
-p2made\assets\pub\MomentTimezoneAsset::register($this);
-p2made\assets\pub\MorrisAsset::register($this);
-p2made\assets\pub\RaphaelAsset::register($this);
-p2made\assets\pub\SweetAlertAsset::register($this);
+p2made\assets\BootstrapSocialAsset::register($this);
+p2made\assets\DataTablesAsset::register($this);
+p2made\assets\ExcanvasAsset::register($this);
+p2made\assets\FlotChartsAsset::register($this);
+p2made\assets\FlotTooltipAsset::register($this);
+p2made\assets\FullCalendarAsset::register($this);
+p2made\assets\Html5shivAsset::register($this);
+p2made\assets\MetisMenuAsset::register($this);
+p2made\assets\MomentAsset::register($this);
+p2made\assets\MomentTimezoneAsset::register($this);
+p2made\assets\MorrisAsset::register($this);
+p2made\assets\RaphaelAsset::register($this);
+p2made\assets\SweetAlertAsset::register($this);
 
-		'p2made\assets\pub\BootstrapSocialAsset',
-		'p2made\assets\pub\DataTablesAsset',
-		'p2made\assets\pub\ExcanvasAsset',
-		'p2made\assets\pub\FlotChartsAsset',
-		'p2made\assets\pub\FlotTooltipAsset',
-		'p2made\assets\pub\FullCalendarAsset',
-		'p2made\assets\pub\Html5shivAsset',
-		'p2made\assets\pub\MetisMenuAsset',
-		'p2made\assets\pub\MomentAsset',
-		'p2made\assets\pub\MomentTimezoneAsset',
-		'p2made\assets\pub\MorrisAsset',
-		'p2made\assets\pub\RaphaelAsset',
-		'p2made\assets\pub\SweetAlertAsset',
- */
-
-/* cdn
-p2made\assets\cdn\BootstrapSocialAsset::register($this);
-p2made\assets\cdn\DataTablesAsset::register($this);
-p2made\assets\cdn\ExcanvasAsset::register($this);
-p2made\assets\cdn\FlotChartsAsset::register($this);
-p2made\assets\cdn\FlotTooltipAsset::register($this);
-p2made\assets\cdn\FullCalendarAsset::register($this);
-p2made\assets\cdn\Html5shivAsset::register($this);
-p2made\assets\cdn\MetisMenuAsset::register($this);
-p2made\assets\cdn\MomentAsset::register($this);
-p2made\assets\cdn\MomentTimezoneAsset::register($this);
-p2made\assets\cdn\MorrisAsset::register($this);
-p2made\assets\cdn\RaphaelAsset::register($this);
-p2made\assets\cdn\SweetAlertAsset::register($this);
-
-		'p2made\assets\cdn\BootstrapSocialAsset',
-		'p2made\assets\cdn\DataTablesAsset',
-		'p2made\assets\cdn\ExcanvasAsset',
-		'p2made\assets\cdn\FlotChartsAsset',
-		'p2made\assets\cdn\FlotTooltipAsset',
-		'p2made\assets\cdn\FullCalendarAsset',
-		'p2made\assets\cdn\Html5shivAsset',
-		'p2made\assets\cdn\MetisMenuAsset',
-		'p2made\assets\cdn\MomentAsset',
-		'p2made\assets\cdn\MomentTimezoneAsset',
-		'p2made\assets\cdn\MorrisAsset',
-		'p2made\assets\cdn\RaphaelAsset',
-		'p2made\assets\cdn\SweetAlertAsset',
+		'p2made\assets\BootstrapSocialAsset',
+		'p2made\assets\DataTablesAsset',
+		'p2made\assets\ExcanvasAsset',
+		'p2made\assets\FlotChartsAsset',
+		'p2made\assets\FlotTooltipAsset',
+		'p2made\assets\FullCalendarAsset',
+		'p2made\assets\Html5shivAsset',
+		'p2made\assets\MetisMenuAsset',
+		'p2made\assets\MomentAsset',
+		'p2made\assets\MomentTimezoneAsset',
+		'p2made\assets\MorrisAsset',
+		'p2made\assets\RaphaelAsset',
+		'p2made\assets\SweetAlertAsset',
  */
 ?>
 <div id="content-wrapper">

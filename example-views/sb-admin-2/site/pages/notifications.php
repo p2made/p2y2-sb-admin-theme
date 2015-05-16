@@ -8,8 +8,8 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Notifications';
 
-p2made\assets\pub\MetisMenuAsset::register($this);
-p2made\assets\pub\SweetAlertAsset::register($this);
+p2made\assets\MetisMenuAsset::register($this);
+p2made\assets\SweetAlertAsset::register($this);
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 p2made\theme\sbAdmin\demo\SweetAlertDemoAsset::register($this);
 ?>

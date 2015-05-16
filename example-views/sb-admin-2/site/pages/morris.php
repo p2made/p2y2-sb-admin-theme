@@ -9,7 +9,7 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Morris.js Charts';
 
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\assets\pub\MorrisAsset::register($this);
+p2made\assets\MorrisAsset::register($this);
 p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
 ?>
 <div id="content-wrapper">

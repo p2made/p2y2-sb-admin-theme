@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $content string */
 
 p2made\theme\sbAdmin\web\SBAdmin2UserAsset::register($this);
-p2made\assets\pub\BootstrapSocialAsset::register($this);
+p2made\assets\BootstrapSocialAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

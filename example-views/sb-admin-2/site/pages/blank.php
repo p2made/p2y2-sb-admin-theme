@@ -8,7 +8,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Blank Page';
 
-p2made\assets\pub\MetisMenuAsset::register($this);
+p2made\assets\MetisMenuAsset::register($this);
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
