@@ -1,5 +1,5 @@
-sbAdmin Theme
-=============
+sbAdmin Theme v1.1.0
+====================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
 
