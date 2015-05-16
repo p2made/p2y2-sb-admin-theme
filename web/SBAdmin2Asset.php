@@ -21,6 +21,6 @@ class SBAdmin2Asset extends \yii\web\AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapPluginAsset',
 		'\rmrevin\yii\fontawesome\AssetBundle',
-		'p2made\assets\pub\MetisMenuAsset',
+		'p2made\assets\MetisMenuAsset',
 	];
 }
