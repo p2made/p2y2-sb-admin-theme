@@ -18,39 +18,49 @@ p2made\assets\Html5shivAsset::register($this);
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
 
-/* pub
+/*
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 p2made\theme\sbAdmin\web\SBAdmin2UserAsset::register($this);
 p2made\theme\sbAdmin\web\SBAdminAsset::register($this);
 p2made\theme\sbAdmin\web\TimelineAsset::register($this);
 
+p2made\assets\AnimateAsset::register($this);
 p2made\assets\BootstrapSocialAsset::register($this);
 p2made\assets\DataTablesAsset::register($this);
 p2made\assets\ExcanvasAsset::register($this);
 p2made\assets\FlotChartsAsset::register($this);
 p2made\assets\FlotTooltipAsset::register($this);
 p2made\assets\FullCalendarAsset::register($this);
-p2made\assets\Html5shivAsset::register($this);
+p2made\assets\HolderAsset::register($this);
+p2made\assets\IsotopeAsset::register($this);
 p2made\assets\MetisMenuAsset::register($this);
 p2made\assets\MomentAsset::register($this);
 p2made\assets\MomentTimezoneAsset::register($this);
 p2made\assets\MorrisAsset::register($this);
+p2made\assets\PrettyPhotoAsset::register($this);
+p2made\assets\PrettySociableAsset::register($this);
 p2made\assets\RaphaelAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
+p2made\assets\Html5shivAsset::register($this);
 
+		'p2made\assets\AnimateAsset',
 		'p2made\assets\BootstrapSocialAsset',
 		'p2made\assets\DataTablesAsset',
 		'p2made\assets\ExcanvasAsset',
 		'p2made\assets\FlotChartsAsset',
 		'p2made\assets\FlotTooltipAsset',
 		'p2made\assets\FullCalendarAsset',
-		'p2made\assets\Html5shivAsset',
+		'p2made\assets\HolderAsset',
+		'p2made\assets\IsotopeAsset',
 		'p2made\assets\MetisMenuAsset',
 		'p2made\assets\MomentAsset',
 		'p2made\assets\MomentTimezoneAsset',
 		'p2made\assets\MorrisAsset',
+		'p2made\assets\PrettyPhotoAsset',
+		'p2made\assets\PrettySociableAsset',
 		'p2made\assets\RaphaelAsset',
 		'p2made\assets\SweetAlertAsset',
+		'p2made\assets\Html5shivAsset',
  */
 ?>
 <div id="content-wrapper">
