@@ -1,4 +1,4 @@
-sbAdmin Theme v1.2.0
+sbAdmin Theme v1.2.1
 ====================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
@@ -44,7 +44,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/preview/sb-admin-2'
+					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/views-preview/sb-admin-2'
 				],
 			],
 		],
