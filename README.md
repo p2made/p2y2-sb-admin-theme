@@ -1,4 +1,4 @@
-sbAdmin Theme v1.1.2
+sbAdmin Theme v1.2.0
 ====================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
@@ -44,7 +44,7 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/example-views/sb-admin-2'
+					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/preview/sb-admin-2'
 				],
 			],
 		],
@@ -55,8 +55,9 @@ This asset bundle provides sample files for layout and view (see folder `example
 
 Therefore it is recommended to **copy the views into your application** and adjust them to your needs.
 
-To view the sample pages in `site/pages/` you need to modify `actions()` in the `SiteController`:
+To view pages in `site/pages/` you need to modify `actions()` in the `SiteController`:
 
+```php
 	public function actions()
 	{
 		return [
@@ -66,6 +67,7 @@ To view the sample pages in `site/pages/` you need to modify `actions()` in the 
 			],
 		];
 	}
+```
 
 Customization
 -------------
@@ -73,6 +75,20 @@ Customization
 - Copy files from `vendor/p2made/yii2-sb-admin-theme/example-views/sb-admin-2` (or other theme) to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to html markup `http://startbootstrap.com/template-overviews/sb-admin-2/` & the example views.
+
+If you want to use the layout files *without* modifying them, then use this slightly different modification to the path mappings:
+
+```php
+	'components' => [
+		'view' => [
+			'theme' => [
+				'pathMap' => [
+					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/views/sb-admin-2'
+				],
+			],
+		],
+	],
+```
 
 Known Issues
 ------------
