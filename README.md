@@ -1,4 +1,4 @@
-sbAdmin Theme v1.2.1
+sbAdmin Theme v1.2.2
 ====================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
@@ -44,14 +44,14 @@ Once the extension is installed, you can have a *preview* by reconfiguring the p
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/views-preview/sb-admin-2'
+					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/views/sb-admin-2',
 				],
 			],
 		],
 	],
 ```
 
-This asset bundle provides sample files for layout and view (see folder `views-preview/`), they are **not meant to be customized directly in the `vendor/` folder**. If you do that, your changes will be lost next time you run `composer update`.
+This asset bundle provides sample files for layout and view (see folder `views/`), they are **not meant to be customized directly in the `vendor/` folder**. If you do that, your changes will be lost next time you run `composer update`.
 
 Therefore it is recommended to **copy the views into your application** and adjust them to your needs.
 
@@ -83,7 +83,7 @@ If you want to use the layout files *without* modifying them, then use this slig
 		'view' => [
 			'theme' => [
 				'pathMap' => [
-					'@app/views' => '@vendor/p2made/yii2-sb-admin-theme/views/sb-admin-2'
+					'@app/views/layouts' => '@vendor/p2made/yii2-sb-admin-theme/views/sb-admin-2/layouts',
 				],
 			],
 		],
