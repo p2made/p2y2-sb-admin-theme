@@ -1,9 +1,9 @@
-sbAdmin Theme v1.2.2
-====================
+P2SB Admin Theme v1.2.3
+=======================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
 
-sbAdmin Theme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
+P2SB Admin Theme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
 which registers the CSS & JS files for the SB Admin 2 UI.
 
 It declares [`p2made/yii2-asset-collection`](https://github.com/p2made/yii2-asset-collection) as a dependancy.
@@ -11,7 +11,7 @@ It declares [`p2made/yii2-asset-collection`](https://github.com/p2made/yii2-asse
 Installation
 ------------
 
-The preferred way to install sbAdmin Theme is through [composer](http://getcomposer.org/download/).
+The preferred way to install P2SB Admin Theme is through [composer](http://getcomposer.org/download/).
 Depending on your composer installation, run *one* of the following commands:
 
 ```
@@ -30,7 +30,7 @@ Alternatively add:
 "p2made/yii2-sb-admin-theme": "*"
 ```
 
-to the requires section of your `composer.json` file & p2y2bootstrapSocialAsset will be installed next time you run `composer update`.
+to the requires section of your `composer.json` file & P2SB Admin Theme will be installed next time you run `composer update`.
 
 The files are installed via Yii's recommended usage of the `fxp/composer-asset-plugin`.
 
@@ -76,7 +76,7 @@ Customization
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
 - Edit your views adhering to html markup `http://startbootstrap.com/template-overviews/sb-admin-2/` & the example views.
 
-If you want to use the layout files *without* modifying them, then use this slightly different modification to the path mappings:
+If you want to use the layout files *without* modifying them, then use this slightly different modification to the path mappings that only re-maps the `layouts` folder:
 
 ```php
 	'components' => [
