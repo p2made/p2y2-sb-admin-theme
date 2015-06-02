@@ -17,12 +17,12 @@
         }
     ],
 
-    "version": "1.2.4",
+    "version": "1.2.5",
     "minimum-stability": "dev",
 
     "require": {
-        "yiisoft/yii2": "*",
-        "p2made/yii2-asset-collection": "4.*"
+        "yiisoft/yii2": "2.*",
+        "p2made/yii2-p2y2-things": "dev-master"
     },
     "autoload": {
         "psr-4": {
