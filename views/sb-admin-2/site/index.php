@@ -25,6 +25,7 @@ p2made\assets\MorrisAsset::register($this);
 p2made\assets\Html5shivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
+p2made\demo\FlotDemoAsset::register($this);
 p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
 
 /*

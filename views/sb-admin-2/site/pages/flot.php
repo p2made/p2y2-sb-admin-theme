@@ -20,7 +20,9 @@ $this->title = 'Flot Charts';
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 p2made\assets\MorrisAsset::register($this);
 p2made\assets\FlotChartsAsset::register($this);
-p2made\theme\sbAdmin\demo\FlotDemoAsset::register($this);
+
+// DEMO ONLY _DON'T_ use this in your production copy.
+p2made\demo\FlotDemoAsset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">
