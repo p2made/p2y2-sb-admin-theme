@@ -1,4 +1,4 @@
-P2SB Admin Theme v1.2.6
+P2SB Admin Theme v1.2.7
 =======================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
@@ -15,19 +15,19 @@ The preferred way to install P2SB Admin Theme is through [composer](http://getco
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-sb-admin-theme "*"
+composer require p2made/yii2-sb-admin-theme ">=1.2.7"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-sb-admin-theme "*"
+php composer.phar require p2made/yii2-sb-admin-theme ">=1.2.7"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-sb-admin-theme": "*"
+"p2made/yii2-sb-admin-theme": ">=1.2.7"
 ```
 
 to the requires section of your `composer.json` file & P2SB Admin Theme will be installed next time you run `composer update`.
@@ -93,7 +93,7 @@ If you want to use the layout files *without* modifying them, then use this slig
 Known Issues
 ------------
 
-- sample pages in `site/pages/` return a 403 error when viewed in the Y11 2 Advanced backend. This doesn't happen in the Y11 2 Advanced frontend.
+- sample pages in `site/pages/` return a 403 error when viewed in the Yii2 Advanced backend. This doesn't happen in the Yii2 Advanced frontend.
 
 I've not been able to resolve this. It may be an issue on my development machine.
 

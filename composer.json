@@ -21,8 +21,12 @@
     "minimum-stability": "dev",
 
     "require": {
-        "yiisoft/yii2": "2.*",
-        "p2made/yii2-p2y2-things": "1.*"
+        "yiisoft/yii2": ">=2.0.6",
+        "fxp/composer-asset-plugin": "~1.1",
+        "p2made/yii2-p2y2-things": "1.*",
+        "bower-asset/bootstrap": "~3.3",
+        "rmrevin/yii2-fontawesome": "~2.13",
+        "philippfrenzel/yii2fullcalendar": "*"
     },
     "autoload": {
         "psr-4": {
