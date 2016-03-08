@@ -10,6 +10,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use p2made\demo\Things\demo\FlotDemoData;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
@@ -25,7 +26,7 @@ p2made\assets\MorrisAsset::register($this);
 p2made\assets\Html5shivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\demo\FlotDemoAsset::register($this);
+p2made\demo\FlotDemoData::register($this);
 p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
 
 /*

@@ -1,6 +1,6 @@
 <?php
 /**
- * SBAdmin2Asset.php
+ * SBAdmin2UserAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -8,24 +8,21 @@
  * @license MIT
  */
 
-namespace p2made\theme\sbAdmin\web;
+namespace p2made\theme\sbAdmin;
 
-class SBAdmin2Asset extends \yii\web\AssetBundle
+class SBAdmin2UserAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@vendor/p2made/yii2-sb-admin-theme/assets';
 
 	public $css = [
-		'css/sb-admin-2.min.css',
+		'css/sb-admin-2-user.min.css',
 	];
 
-	public $js = [
-		'js/sb-admin-2.min.js'
-	];
+	public $js = [];
 
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapPluginAsset',
 		'p2made\assets\FontAwesomeAsset',
-		'p2made\assets\MetisMenuAsset',
 	];
 }

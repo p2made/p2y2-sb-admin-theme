@@ -8,7 +8,7 @@
  * @license MIT
  */
 
-namespace p2made\theme\sbAdmin\web;
+namespace p2made\theme\sbAdmin;
 
 class SBAdminAsset extends \yii\web\AssetBundle
 {
