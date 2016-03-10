@@ -21,14 +21,14 @@
         "source": "https://github.com/p2made/yii2-sb-admin-theme"
     },
 
-    "version": "1.2.7",
+    "version": "1.2.8",
     "minimum-stability": "dev",
 
     "require": {
         "yiisoft/yii2": ">=2.0.6",
         "fxp/composer-asset-plugin": "~1.1",
-        "p2made/yii2-p2y2-things": ">=1.1"
-        "p2made/yii2-p2y2-things-demo": ">=1.1"
+        "p2made/yii2-p2y2-things": ">=1.1",
+        "p2made/yii2-p2y2-things-demo": ">=1.1",
         "philippfrenzel/yii2fullcalendar": "*"
     },
     "autoload": {
