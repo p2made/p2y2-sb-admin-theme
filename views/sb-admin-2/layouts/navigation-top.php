@@ -74,8 +74,10 @@ use yii\bootstrap\NavBar;
 					<i class="fa fa-angle-right"></i>
 				</a>
 			</li>
-		</ul><!-- /.dropdown-messages -->
-	</li><!-- /.dropdown -->
+		</ul>
+		<!-- /.dropdown-messages -->
+	</li>
+	<!-- /.dropdown -->
 	<li class="dropdown">
 		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 			<i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -151,8 +153,10 @@ use yii\bootstrap\NavBar;
 					<i class="fa fa-angle-right"></i>
 				</a>
 			</li>
-		</ul><!-- /.dropdown-tasks -->
-	</li><!-- /.dropdown -->
+		</ul>
+		<!-- /.dropdown-tasks -->
+	</li>
+	<!-- /.dropdown -->
 	<li class="dropdown">
 		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 			<i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -209,8 +213,10 @@ use yii\bootstrap\NavBar;
 					<i class="fa fa-angle-right"></i>
 				</a>
 			</li>
-		</ul><!-- /.dropdown-alerts -->
-	</li><!-- /.dropdown -->
+		</ul>
+		<!-- /.dropdown-alerts -->
+	</li>
+	<!-- /.dropdown -->
 	<li class="dropdown">
 		<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 			<i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
@@ -229,5 +235,7 @@ use yii\bootstrap\NavBar;
 				) ?>
 			</li>
 		</ul><!-- /.dropdown-user -->
-	</li><!-- /.dropdown -->
+		<!-- /.dropdown-user -->
+	</li>
+	<!-- /.dropdown -->
 </ul>

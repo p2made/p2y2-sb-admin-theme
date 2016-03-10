@@ -10,6 +10,8 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+
+// DEMO ONLY _DON'T_ use this in your production copy.
 use p2made\demo\Things\demo\FlotDemoData;
 
 /* @var $this yii\web\View */
@@ -18,16 +20,14 @@ use p2made\demo\Things\demo\FlotDemoData;
 
 $this->title = 'Dashboard';
 
-// being really pedantic about asset order...
-p2made\assets\MetisMenuAsset::register($this);
 p2made\assets\TimelineAsset::register($this);
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+
 p2made\assets\MorrisAsset::register($this);
-p2made\assets\Html5shivAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\demo\FlotDemoData::register($this);
-p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
+p2made\demo\assets\MorrisDemoData::register($this);
+p2made\demo\assets\FlotDemoData::register($this);
 
 /*
 p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
@@ -53,7 +53,6 @@ p2made\assets\PrettySociableAsset::register($this);
 p2made\assets\RaphaelAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
 p2made\assets\TimelineAsset::register($this);
-p2made\assets\Html5shivAsset::register($this);
 
 		'p2made\assets\AnimateAsset',
 		'p2made\assets\BootstrapSocialAsset',

@@ -17,8 +17,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Grid';
 
-p2made\assets\MetisMenuAsset::register($this);
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">
@@ -299,4 +298,6 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 			</div>
 		</div>
 	</div>
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div><!-- /#content-wrapper -->

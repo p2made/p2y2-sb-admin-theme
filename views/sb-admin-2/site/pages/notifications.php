@@ -17,10 +17,9 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Notifications';
 
-p2made\assets\MetisMenuAsset::register($this);
-p2made\assets\SweetAlertAsset::register($this);
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\theme\sbAdmin\demo\SweetAlertDemoAsset::register($this);
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+//p2made\assets\SweetAlertAsset::register($this);
+//p2made\theme\sbAdmin\demo\SweetAlertDemoAsset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">
@@ -278,4 +277,6 @@ if (isConfirm) {
 			</div><!-- /.panel -->
 		</div><!-- /.col-lg-6 -->
 	</div><!-- /.row -->
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div><!-- /#content-wrapper -->

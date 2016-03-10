@@ -17,8 +17,7 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Forms';
 
-p2made\assets\MetisMenuAsset::register($this);
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
 	<div class="row">

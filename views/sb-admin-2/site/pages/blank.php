@@ -17,9 +17,9 @@ use yii\bootstrap\ActiveForm;
 
 $this->title = 'Blank Page';
 
-p2made\assets\MetisMenuAsset::register($this);
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
 
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
 </div><!-- /#content-wrapper -->

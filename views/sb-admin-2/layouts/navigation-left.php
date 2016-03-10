@@ -63,8 +63,19 @@ use yii\bootstrap\Nav;
 						['label' => 'Buttons', 'url' => ['/site/page', 'view' => 'buttons']],
 						['label' => 'Notifications', 'url' => ['/site/page', 'view' => 'notifications']],
 						['label' => 'Typography', 'url' => ['/site/page', 'view' => 'typography']],
-						['label' => ' Icons', 'url' => ['/site/page', 'view' => 'icons']],
 						['label' => 'Grid', 'url' => ['/site/page', 'view' => 'grid']],
+					],
+				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+				]) ?>
+			</li><!-- UI Elements -->
+			<li>
+				<a href="#"><i class="fa fa-image fa-fw"></i> Icons<span class="fa arrow"></span></a>
+				<?= Nav::widget([
+					'encodeLabels' => false,
+					'options' => ['class' => 'nav nav-second-level'],
+					'items' => [
+						['label' => ' Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
+						['label' => ' Glyphicons', 'url' => ['/site/page', 'view' => 'glyphicons']],
 					],
 				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				]) ?>
@@ -98,17 +109,6 @@ use yii\bootstrap\Nav;
 				</ul>
 			</li><!-- Multi-Level Dropdown -->
 			<li>
-				<a href="#"><i class="fa fa-coffee fa-fw"></i> Developer<span class="fa arrow"></span></a>
-				<?= Nav::widget([
-					'encodeLabels' => false,
-					'options' => ['class' => 'nav nav-second-level'],
-					'items' => [
-						['label' => '<span class="fa fa-file-code-o fa-fw"></span> Gii', 'url' => ['/gii']],
-						['label' => '<span class="fa fa-dashboard fa-fw"></span> Debug', 'url' => ['/debug']],
-					],
-				]) ?>
-			</li><!-- Developer -->
-			<li>
 				<a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
 				<?= Nav::widget([
 					'encodeLabels' => false,
@@ -128,6 +128,17 @@ use yii\bootstrap\Nav;
 					],
 				]) ?>
 			</li><!-- Sample Pages -->
+			<li>
+				<a href="#"><i class="fa fa-coffee fa-fw"></i> Developer<span class="fa arrow"></span></a>
+				<?= Nav::widget([
+					'encodeLabels' => false,
+					'options' => ['class' => 'nav nav-second-level'],
+					'items' => [
+						['label' => '<span class="fa fa-file-code-o fa-fw"></span> Gii', 'url' => ['/gii']],
+						['label' => '<span class="fa fa-dashboard fa-fw"></span> Debug', 'url' => ['/debug']],
+					],
+				]) ?>
+			</li><!-- Developer -->
 		</ul>
 	</div>
 </section>
