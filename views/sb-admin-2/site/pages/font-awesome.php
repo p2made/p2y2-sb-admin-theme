@@ -11,11 +11,13 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+
+$this->title = 'Font Awesome';
+
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \common\models\LoginForm */
-
-$this->title = 'Font Awesome';
 
 $faIcons = [
 	'fa-adjust', 'fa-adn', 'fa-align-center', 'fa-align-justify', 'fa-align-left',
@@ -112,11 +114,13 @@ $faIcons = [
 	'fa-wheelchair', 'fa-windows', 'fa-won', 'fa-wordpress', 'fa-wrench', 'fa-xing-square',
 	'fa-xing', 'fa-yahoo', 'fa-yen', 'fa-youtube-play', 'fa-youtube-square', 'fa-youtube',
 ];
-
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
+
+	<!-- #pragma - 1 or more naked rows go in here -->
+
 	<div class="row">
+
 		<div class="col-lg-12">
 
 			<div class="panel panel-default">
@@ -134,9 +138,12 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div><!-- / Font Awesome -->
 
-
 		</div>
+
 	</div>
 
+	<!-- /#pragma -->
+
 	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->

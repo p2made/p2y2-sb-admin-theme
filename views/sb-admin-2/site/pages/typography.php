@@ -1,6 +1,6 @@
 <?php
 /**
- * typography.php
+ * blank.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -11,15 +11,18 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
 $this->title = 'Typography';
 
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
+
+	<!-- #pragma - 1 or more naked rows go in here -->
+
 	<div class="row">
 		<div class="col-lg-4">
 			<div class="panel panel-default">
@@ -45,9 +48,12 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 					<h6>Heading 6
 						<small>Sub-heading</small>
 					</h6>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-4 -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-4 -->
 		<div class="col-lg-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -70,9 +76,12 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 					<p class="text-left">Left aligned text.</p>
 					<p class="text-center">Center aligned text.</p>
 					<p class="text-right">Right aligned text.</p>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-4 -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-4 -->
 		<div class="col-lg-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -85,10 +94,14 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 					<p class="text-info">This is an example of info text.</p>
 					<p class="text-warning">This is an example of warning text.</p>
 					<p class="text-danger">This is an example of danger text.</p>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-4 -->
-	</div><!-- /.row -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-4 -->
+	</div>
+
 	<div class="row">
 		<div class="col-lg-4">
 			<div class="panel panel-default">
@@ -114,9 +127,12 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 						<br>
 						<a href="mailto:#">first.last@example.com</a>
 					</address>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-4 -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-4 -->
 		<div class="col-lg-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -138,9 +154,12 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 					<blockquote class="pull-right">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 					</blockquote>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-4 -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-4 -->
 		<div class="col-lg-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -178,10 +197,14 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 						<li>List Item</li>
 						<li>List Item</li>
 					</ul>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-4 -->
-	</div><!-- /.row -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-4 -->
+	</div>
+
 	<div class="row">
 		<div class="col-lg-4">
 			<div class="panel panel-default">
@@ -201,9 +224,12 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 						<dt>Description List Title</dt>
 						<dd>Description List Text</dd>
 					</dl>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-4 -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-4 -->
 		<div class="col-lg-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -213,10 +239,16 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 					<p>This is an example of an inline code element within body copy. Wrap inline code within a
 						<code>&lt;code&gt;...&lt;/code&gt;</code>tag.</p>
 					<pre>This is an example of preformatted text.</pre>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-4 -->
-	</div><!-- /.row -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-4 -->
+	</div>
+
+	<!-- /#pragma -->
 
 	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->

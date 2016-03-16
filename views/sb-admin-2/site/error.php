@@ -11,13 +11,13 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
 $this->title = $name;
 
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
 	<div class="row">

@@ -12,7 +12,7 @@ namespace p2made\theme\sbAdmin\assets;
 
 class SBAdminAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-sb-admin-theme/lib';
+	public $sourcePath = '@vendor/p2made/yii2-sb-admin-theme/assets/lib';
 
 	public $css = [
 		'css/sb-admin.min.css',

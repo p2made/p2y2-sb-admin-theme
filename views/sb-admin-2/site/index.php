@@ -1,6 +1,6 @@
 <?php
 /**
- * index.php
+ * blank.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -11,72 +11,22 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-// DEMO ONLY _DON'T_ use this in your production copy.
-use p2made\demo\Things\demo\FlotDemoData;
-
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
-
-$this->title = 'Dashboard';
-
-p2made\assets\TimelineAsset::register($this);
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2made\assets\TimelineAsset::register($this);
 
 p2made\assets\MorrisAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2made\demo\assets\MorrisDemoData::register($this);
-p2made\demo\assets\FlotDemoData::register($this);
 
-/*
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\theme\sbAdmin\web\SBAdmin2UserAsset::register($this);
-p2made\theme\sbAdmin\web\SBAdminAsset::register($this);
+$this->title = 'Dashboard';
 
-p2made\assets\AnimateAsset::register($this);
-p2made\assets\BootstrapSocialAsset::register($this);
-p2made\assets\DataTablesAsset::register($this);
-p2made\assets\ExcanvasAsset::register($this);
-p2made\assets\FlotChartsAsset::register($this);
-p2made\assets\FlotTooltipAsset::register($this);
-p2made\assets\FontAwesomeAsset::register($this);
-p2made\assets\FullCalendarAsset::register($this);
-p2made\assets\HolderAsset::register($this);
-p2made\assets\IsotopeAsset::register($this);
-p2made\assets\MetisMenuAsset::register($this);
-p2made\assets\MomentAsset::register($this);
-p2made\assets\MomentTimezoneAsset::register($this);
-p2made\assets\MorrisAsset::register($this);
-p2made\assets\PrettyPhotoAsset::register($this);
-p2made\assets\PrettySociableAsset::register($this);
-p2made\assets\RaphaelAsset::register($this);
-p2made\assets\SweetAlertAsset::register($this);
-p2made\assets\TimelineAsset::register($this);
-
-		'p2made\assets\AnimateAsset',
-		'p2made\assets\BootstrapSocialAsset',
-		'p2made\assets\DataTablesAsset',
-		'p2made\assets\ExcanvasAsset',
-		'p2made\assets\FlotChartsAsset',
-		'p2made\assets\FlotTooltipAsset',
-		'p2made\assets\FontAwesomeAsset',
-		'p2made\assets\FullCalendarAsset',
-		'p2made\assets\HolderAsset',
-		'p2made\assets\IsotopeAsset',
-		'p2made\assets\MetisMenuAsset',
-		'p2made\assets\MomentAsset',
-		'p2made\assets\MomentTimezoneAsset',
-		'p2made\assets\MorrisAsset',
-		'p2made\assets\PrettyPhotoAsset',
-		'p2made\assets\PrettySociableAsset',
-		'p2made\assets\RaphaelAsset',
-		'p2made\assets\SweetAlertAsset',
-		'p2made\assets\TimelineAsset',
-		'p2made\assets\Html5shivAsset',
- */
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
+
 	<div class="row">
 		<div class="col-lg-3 col-md-6">
 			<div class="panel panel-primary">
@@ -166,7 +116,7 @@ p2made\assets\TimelineAsset::register($this);
 				</a>
 			</div>
 		</div>
-	</div><!-- /.row -->
+	</div>
 	<div class="row">
 		<div class="col-lg-8">
 			<div class="panel panel-default">
@@ -191,11 +141,14 @@ p2made\assets\TimelineAsset::register($this);
 							</ul>
 						</div>
 					</div>
-				</div><!-- /.panel-heading -->
+				</div>
+				<!-- /.panel-heading -->
 				<div class="panel-body">
 					<div id="morris-area-chart"></div>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
@@ -218,7 +171,8 @@ p2made\assets\TimelineAsset::register($this);
 							</ul>
 						</div>
 					</div>
-				</div><!-- /.panel-heading -->
+				</div>
+				<!-- /.panel-heading -->
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-lg-4">
@@ -283,18 +237,24 @@ p2made\assets\TimelineAsset::register($this);
 										</tr>
 									</tbody>
 								</table>
-							</div><!-- /.table-responsive -->
-						</div><!-- /.col-lg-4 (nested) -->
+							</div>
+							<!-- /.table-responsive -->
+						</div>
+						<!-- /.col-lg-4 (nested) -->
 						<div class="col-lg-8">
 							<div id="morris-bar-chart"></div>
-						</div><!-- /.col-lg-8 (nested) -->
-					</div><!-- /.row -->
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
+						</div>
+						<!-- /.col-lg-8 (nested) -->
+					</div>
+								</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
-				</div><!-- /.panel-heading -->
+				</div>
+				<!-- /.panel-heading -->
 				<div class="panel-body">
 					<ul class="timeline">
 						<li>
@@ -398,14 +358,18 @@ p2made\assets\TimelineAsset::register($this);
 							</div>
 						</li>
 					</ul>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-8 -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
+		</div>
+		<!-- /.col-lg-8 -->
 		<div class="col-lg-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<i class="fa fa-bell fa-fw"></i> Notifications Panel
-				</div><!-- /.panel-heading -->
+				</div>
+				<!-- /.panel-heading -->
 				<div class="panel-body">
 					<div class="list-group">
 						<a href="#" class="list-group-item">
@@ -453,10 +417,13 @@ p2made\assets\TimelineAsset::register($this);
 							<span class="pull-right text-muted small"><em>Yesterday</em>
 							</span>
 						</a>
-					</div><!-- /.list-group -->
+					</div>
+					<!-- /.list-group -->
 					<a href="#" class="btn btn-default btn-block">View All Alerts</a>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
@@ -464,8 +431,10 @@ p2made\assets\TimelineAsset::register($this);
 				<div class="panel-body">
 					<div id="morris-donut-chart"></div>
 					<a href="#" class="btn btn-default btn-block">View Details</a>
-				</div><!-- /.panel-body -->
-			</div><!-- /.panel -->
+				</div>
+				<!-- /.panel-body -->
+			</div>
+			<!-- /.panel -->
 			<div class="chat-panel panel panel-default">
 				<div class="panel-heading">
 					<i class="fa fa-comments fa-fw"></i>
@@ -503,7 +472,8 @@ p2made\assets\TimelineAsset::register($this);
 							</li>
 						</ul>
 					</div>
-				</div><!-- /.panel-heading -->
+				</div>
+				<!-- /.panel-heading -->
 				<div class="panel-body">
 					<ul class="chat">
 						<li class="left clearfix">
@@ -568,7 +538,8 @@ p2made\assets\TimelineAsset::register($this);
 							</div>
 						</li>
 					</ul>
-				</div><!-- /.panel-body -->
+				</div>
+				<!-- /.panel-body -->
 				<div class="panel-footer">
 					<div class="input-group">
 						<input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
@@ -578,8 +549,14 @@ p2made\assets\TimelineAsset::register($this);
 							</button>
 						</span>
 					</div>
-				</div><!-- /.panel-footer -->
-			</div><!-- /.panel .chat-panel -->
-		</div><!-- /.col-lg-4 -->
-	</div><!-- /.row -->
+				</div>
+				<!-- /.panel-footer -->
+			</div>
+			<!-- /.panel .chat-panel -->
+		</div>
+		<!-- /.col-lg-4 -->
+	</div>
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->

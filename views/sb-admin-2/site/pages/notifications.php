@@ -1,6 +1,6 @@
 <?php
 /**
- * notifications.php
+ * blank.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -11,19 +11,25 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
-
-$this->title = 'Notifications';
-
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 //p2made\assets\SweetAlertAsset::register($this);
 //p2made\theme\sbAdmin\demo\SweetAlertDemoAsset::register($this);
+
+$this->title = 'Notifications';
+
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
+
+	<!-- #pragma - 1 or more naked rows go in here -->
+
 	<div class="row">
+
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					Alert Styles
@@ -41,11 +47,13 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 					<div class="alert alert-danger">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
 					</div>
-				</div>
-				<!-- .panel-body -->
+				</div><!-- .panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
+
+		</div>
+
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					Dismissable Alerts
@@ -67,151 +75,17 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
 					</div>
-				</div>
-				<!-- .panel-body -->
+				</div><!-- .panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
-	</div><!-- /.row -->
+
+		</div>
+
+	</div>
+
 	<div class="row">
-		<div class="col-lg-12">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					Sweet Alerts
-				</div><!-- /.panel-heading -->
-				<div class="panel-body">
-					<div class="col-lg-6">
-						<h4>Basic example</h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-primary" id="sweet-1">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre class="code">swal("Here's a message!")</pre>
-							</div>
-						</div>
 
-						<h4>A title with a text under</h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-primary" id="sweet-2">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre>swal("Here's a message!", "It's pretty, isn't it?")</pre>
-							</div>
-						</div>
-
-						<h4>A success message!</h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-success" id="sweet-3">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre>swal("Good job!", "You clicked the button!", "success")</pre>
-							</div>
-						</div>
-
-						<h4>A warning message!</h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-warning" id="sweet-4">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre>swal("Warning!", "You clicked the button!", "warning")</pre>
-							</div>
-						</div>
-
-						<h4>An error message!</h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-danger" id="sweet-5">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre>swal("Error!", "You clicked the button!", "error")</pre>
-							</div>
-						</div>
-
-						<h4>An info message!</h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-info" id="sweet-6">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre>swal("Info!", "You clicked the button!", "info")</pre>
-							</div>
-						</div>
-
-						<h4>A message with a custom icon</h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-primary" id="sweet-7">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre>swal({
-title: "Sweet!",
-text: "Here's a custom image.",
-imageUrl: 'thumbs-up.jpg'
-});</pre>
-							</div>
-						</div>
-					</div><!-- /.col-lg-6 -->
-					<div class="col-lg-6">
-						<h4>A warning message<small>, with a function attached to the "Confirm" button...</small></h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-warning" id="sweet-8">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre>
-swal({
-title: "Are you sure?",
-text: "Your will not be able to recover this imaginary file!",
-type: "warning",
-showCancelButton: true,
-confirmButtonClass: "btn-danger",
-confirmButtonText: "Yes, delete it!",
-closeOnConfirm: false
-},
-function(){
-swal("Deleted!", "Your imaginary file has been deleted.", "success");
-});</pre>
-							</div>
-						</div>
-
-						<h4><small>...and by passing a parameter, you can execute something else for "Cancel".</small></h4>
-						<div class="row">
-							<div class="col-lg-2 text-center">
-								<p><button class="btn btn-warning" id="sweet-9">Try It</button></p>
-							</div>
-							<div class="col-lg-10">
-								<pre>
-swal({
-title: "Are you sure?",
-text: "You will not be able to recover this imaginary file!",
-type: "warning",
-showCancelButton: true,
-confirmButtonClass: "btn-danger",
-confirmButtonText: "Yes, delete it!",
-cancelButtonText: "No, cancel plx!",
-closeOnConfirm: false,
-closeOnCancel: false
-},
-function(isConfirm) {
-if (isConfirm) {
-	swal("Deleted!", "Your imaginary file has been deleted.", "success");
-} else {
-	swal("Cancelled", "Your imaginary file is safe :)", "error");
-}
-});</pre>
-							</div>
-						</div>
-					</div><!-- /.col-lg-6 -->
-				</div>
-				<!-- .panel-body -->
-			</div><!-- /.panel -->
-		</div><!-- /.col-lg-12 -->
-	</div><!-- /.row -->
-	<div class="row">
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					Modals
@@ -239,11 +113,13 @@ if (isConfirm) {
 							</div><!-- /.modal-content -->
 						</div><!-- /.modal-dialog -->
 					</div><!-- /.modal -->
-				</div>
-				<!-- .panel-body -->
+				</div><!-- .panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
+
+		</div>
+
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					Tooltips and Popovers
@@ -272,11 +148,15 @@ if (isConfirm) {
 							Popover on right
 						</button>
 					</div>
-				</div>
-				<!-- .panel-body -->
+				</div><!-- .panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
-	</div><!-- /.row -->
+
+		</div>
+
+	</div>
+
+	<!-- /#pragma -->
 
 	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->

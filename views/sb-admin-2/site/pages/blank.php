@@ -11,15 +11,27 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
 $this->title = 'Blank Page';
 
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
 
+	<!-- #pragma - 1 or more naked rows go in here -->
+
+	<div class="row">
+		<div class="col-lg-12">
+
+
+		</div>
+	</div>
+
+	<!-- /#pragma -->
+
 	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->

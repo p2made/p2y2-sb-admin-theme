@@ -1,6 +1,6 @@
 <?php
 /**
- * morris.php
+ * blank.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -11,67 +11,78 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2made\assets\MorrisAsset::register($this);
+
+// DEMO ONLY _DON'T_ use this in your production copy.
+p2made\demo\assets\MorrisDemoData::register($this);
 
 $this->title = 'Morris.js Charts';
 
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
-p2made\assets\MorrisAsset::register($this);
-p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
+
+	<!-- #pragma - 1 or more naked rows go in here -->
+
 	<div class="row">
+
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+					Area Chart Example
 				</div><!-- /.panel-heading -->
 				<div class="panel-body">
-					<div class="caption">Quarterly Apple iOS device unit sales</div>
 					<div id="morris-area-chart"></div>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
+
+		</div>
+
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+					Bar Chart Example
 				</div><!-- /.panel-heading -->
 				<div class="panel-body">
-					<div class="caption">iPhone CPU benchmarks</div>
 					<div id="morris-bar-chart"></div>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
-	<div class="row">
-	</div><!-- /.row -->
+
+		</div>
+
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<i class="fa fa-bar-chart-o fa-fw"></i> Line Chart Example
+					Line Chart Example
 				</div><!-- /.panel-heading -->
 				<div class="panel-body">
-					<div class="caption">Jaguar 'E' Type vehicles in the UK</div>
 					<div id="morris-line-chart"></div>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
+
+		</div>
+
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+					Donut Chart Example
 				</div><!-- /.panel-heading -->
 				<div class="panel-body">
-					<div class="caption">Donut flavours</div>
 					<div id="morris-donut-chart"></div>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
-	<div class="row">
-	</div><!-- /.row -->
+
+		</div>
+
 		<div class="col-lg-12">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					Morris.js Usage
@@ -81,6 +92,13 @@ p2made\theme\sbAdmin\demo\MorrisDemoAsset::register($this);
 					<a target="_blank" class="btn btn-default btn-lg btn-block" href="http://morrisjs.github.io/morris.js/">View Morris.js Documentation</a>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
-	</div><!-- /.row -->
+
+		</div>
+
+	</div>
+
+	<!-- /#pragma -->
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->

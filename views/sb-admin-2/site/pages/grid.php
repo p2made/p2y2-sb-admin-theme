@@ -1,6 +1,6 @@
 <?php
 /**
- * grid.php
+ * blank.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -11,16 +11,20 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
 $this->title = 'Grid';
 
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
+
+	<!-- #pragma - 1 or more naked rows go in here -->
+
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -113,9 +117,11 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -153,9 +159,11 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -179,9 +187,11 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -202,9 +212,11 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -227,9 +239,11 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -253,9 +267,11 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -280,9 +296,11 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -297,7 +315,11 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 				</div>
 			</div>
 		</div>
+
 	</div>
 
+	<!-- /#pragma -->
+
 	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->

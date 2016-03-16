@@ -1,6 +1,6 @@
 <?php
 /**
- * panels-wells.php
+ * blank.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -11,18 +11,22 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
 $this->title = 'Panels and Wells';
 
-p2made\assets\MetisMenuAsset::register($this);
-p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
+
+	<!-- #pragma - 1 or more naked rows go in here -->
+
 	<div class="row">
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					Default Panel
@@ -34,8 +38,11 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 					Panel Footer
 				</div>
 			</div>
-		</div><!-- /.col-lg-4 -->
+
+		</div>
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					Primary Panel
@@ -47,8 +54,11 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 					Panel Footer
 				</div>
 			</div>
-		</div><!-- /.col-lg-4 -->
+
+		</div>
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-success">
 				<div class="panel-heading">
 					Success Panel
@@ -60,10 +70,15 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 					Panel Footer
 				</div>
 			</div>
-		</div><!-- /.col-lg-4 -->
-	</div><!-- /.row -->
+
+		</div>
+
+	</div>
+
 	<div class="row">
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-info">
 				<div class="panel-heading">
 					Info Panel
@@ -75,8 +90,11 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 					Panel Footer
 				</div>
 			</div>
-		</div><!-- /.col-lg-4 -->
+
+		</div>
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-warning">
 				<div class="panel-heading">
 					Warning Panel
@@ -88,8 +106,11 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 					Panel Footer
 				</div>
 			</div>
-		</div><!-- /.col-lg-4 -->
+
+		</div>
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-danger">
 				<div class="panel-heading">
 					Danger Panel
@@ -101,10 +122,15 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 					Panel Footer
 				</div>
 			</div>
-		</div><!-- /.col-lg-4 -->
-	</div><!-- /.row -->
+
+		</div>
+
+	</div>
+
 	<div class="row">
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-green">
 				<div class="panel-heading">
 					Green Panel
@@ -115,9 +141,12 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 				<div class="panel-footer">
 					Panel Footer
 				</div>
-			</div><!-- /.col-lg-4 -->
+			</div>
+
 		</div>
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-yellow">
 				<div class="panel-heading">
 					Yellow Panel
@@ -128,9 +157,12 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 				<div class="panel-footer">
 					Panel Footer
 				</div>
-			</div><!-- /.col-lg-4 -->
+			</div>
+
 		</div>
+
 		<div class="col-lg-4">
+
 			<div class="panel panel-red">
 				<div class="panel-heading">
 					Red Panel
@@ -141,16 +173,20 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 				<div class="panel-footer">
 					Panel Footer
 				</div>
-			</div><!-- /.col-lg-4 -->
+			</div>
+
 		</div>
-	</div><!-- /.row -->
+
+	</div>
+
 	<div class="row">
+
 		<div class="col-lg-12">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					Collapsible Accordion Panel Group
-				</div>
-				<!-- .panel-heading -->
+				</div><!-- .panel-heading -->
 				<div class="panel-body">
 					<div class="panel-group" id="accordion">
 						<div class="panel panel-default">
@@ -190,12 +226,15 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 							</div>
 						</div>
 					</div>
-				</div>
-				<!-- .panel-body -->
+				</div><!-- .panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-12 -->
-	</div><!-- /.row -->
+
+		</div>
+
+	</div>
+
 	<div class="row">
+
 		<div class="col-lg-6">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -235,14 +274,16 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 					</div>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
+
+		</div>
+
 		<div class="col-lg-6">
+
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					Pill Tabs
 				</div><!-- /.panel-heading -->
-				<div class="panel-body">
-					<!-- Nav tabs -->
+				<div class="panel-body"><!-- Nav tabs -->
 					<ul class="nav nav-pills">
 						<li class="active"><a href="#home-pills" data-toggle="tab">Home</a>
 						</li>
@@ -275,29 +316,38 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 					</div>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
-		</div><!-- /.col-lg-6 -->
-	</div><!-- /.row -->
+
+		</div>
+
+	</div>
+
 	<div class="row">
+
 		<div class="col-lg-4">
 			<div class="well">
 				<h4>Normal Well</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
 			</div>
-		</div><!-- /.col-lg-4 -->
+		</div>
+
 		<div class="col-lg-4">
 			<div class="well well-lg">
 				<h4>Large Well</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
 			</div>
-		</div><!-- /.col-lg-4 -->
+		</div>
+
 		<div class="col-lg-4">
 			<div class="well well-sm">
 				<h4>Small Well</h4>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
 			</div>
-		</div><!-- /.col-lg-4 -->
-	</div><!-- /.row -->
+		</div>
+
+	</div>
+
 	<div class="row">
+
 		<div class="col-lg-12">
 			<div class="jumbotron">
 				<h1>Jumbotron</h1>
@@ -305,6 +355,12 @@ p2made\theme\sbAdmin\web\SBAdmin2Asset::register($this);
 				<p><a class="btn btn-primary btn-lg" role="button">Learn more</a>
 				</p>
 			</div>
-		</div><!-- /.col-lg-12 -->
-	</div><!-- /.row -->
+		</div>
+
+	</div>
+
+	<!-- /#pragma -->
+
+	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->

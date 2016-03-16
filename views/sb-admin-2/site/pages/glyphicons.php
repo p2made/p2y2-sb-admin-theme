@@ -1,6 +1,6 @@
 <?php
 /**
- * icons.php
+ * glyphicons.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -11,11 +11,13 @@
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
 
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+
+$this->title = 'Glyphicons';
+
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $model \common\models\LoginForm */
-
-$this->title = 'Icons';
 
 $bgIcons = [
 	'adjust', 'alert', 'align-center', 'align-justify', 'align-left', 'align-right', 'apple',
@@ -58,31 +60,17 @@ $bgIcons = [
 	'unchecked', 'upload', 'usd', 'user', 'volume-down', 'volume-off', 'volume-up',
 	'warning-sign', 'wrench', 'yen', 'zoom-in', 'zoom-out',
 ];
-
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 ?>
 <div id="content-wrapper">
+
+	<!-- #pragma - 1 or more naked rows go in here -->
+
 	<div class="row">
 		<div class="col-lg-12">
 
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					All available icons (Font Awesome)
-				</div>
-				<div class="panel-body">
-					<div class="row">
-					<?php foreach ($faIcons as $icon) { ?>
-						<div class="fa col-lg-3">
-							<?php echo '<p class="fa ' . $icon . '"> ' . $icon . ' </p><br>'; ?>
-						</div>
-					<?php } ?>
-					</div>
-				</div>
-			</div><!-- / Font Awesome -->
-
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					All available icons (Bootstrap Glyphicons)
+					All available icons
 				</div>
 				<div class="panel-body">
 					<div class="row">
@@ -98,5 +86,8 @@ p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 		</div>
 	</div>
 
+	<!-- /#pragma -->
+
 	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+
 </div><!-- /#content-wrapper -->
