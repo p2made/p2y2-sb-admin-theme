@@ -27,8 +27,8 @@
     "require": {
         "yiisoft/yii2": ">=2.0.6",
         "fxp/composer-asset-plugin": "~1.1",
-        "p2made/yii2-p2y2-things": ">=1.2",
-        "p2made/yii2-p2y2-things-demo": ">=1.2",
+        "p2made/yii2-p2y2-things": ">=1.3",
+        "p2made/yii2-p2y2-things-demo": ">=1.3",
         "philippfrenzel/yii2fullcalendar": "*"
     },
     "autoload": {
