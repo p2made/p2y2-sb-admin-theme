@@ -8,8 +8,10 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\bootstrap\ActiveForm;
+
+use p2made\helpers\FA;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2made\assets\DataTablesAsset::register($this);
@@ -745,6 +747,13 @@ $this->title = 'Tables';
 
 	<!-- /#pragma -->
 
-	<br><div class="alert alert-info" role="alert"><p><code><?= __FILE__ ?></code></p></div>
+	<!-- this goes on every site file in p2made demos -->
+	<br><div class="alert alert-success" role="alert">
+		<ul class="fa-ul">
+			<li>
+				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
+			</li>
+		</ul>
+	</div>
 
 </div><!-- /#content-wrapper -->

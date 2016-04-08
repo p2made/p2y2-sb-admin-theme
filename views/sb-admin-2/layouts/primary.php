@@ -8,8 +8,7 @@
  * @license MIT
  */
 
-use backend\assets\AppAsset;
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -17,20 +16,20 @@ use yii\helpers\Html;
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
-	<?= $this->render('html-header.php', []) ?>
+	<?= $this->render('_html-header.php', []) ?>
 <body>
 	<?php $this->beginBody() ?>
 	<div class="wrapper">
 
 		<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 
-			<?= $this->render('navigation-top.php', []) ?>
+			<?= $this->render('_navigation-top.php', []) ?>
 
-			<?= $this->render('navigation-left.php', []) ?>
+			<?= $this->render('_navigation-left.php', []) ?>
 
 		</nav>
 
-		<?= $this->render('content.php', ['content' => $content]) ?>
+		<?= $this->render('_content.php', ['content' => $content]) ?>
 
 	</div>
 	<?php $this->endBody() ?>

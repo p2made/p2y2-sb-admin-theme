@@ -23,10 +23,7 @@ class SBAdmin2Asset extends \yii\web\AssetBundle
 	];
 
 	public $depends = [
-		'yii\web\YiiAsset',
-		'p2made\assets\BootstrapAsset',
-		'p2made\assets\BootstrapPluginAsset',
-		'p2made\assets\FontAwesomeAsset',
+		'p2made\assets\P2CoreLoaderAsset',
 		'p2made\assets\MetisMenuAsset',
 	];
 }

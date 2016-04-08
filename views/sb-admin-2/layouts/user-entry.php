@@ -8,8 +8,7 @@
  * @license MIT
  */
 
-use backend\assets\AppAsset;
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -21,7 +20,7 @@ p2made\assets\BootstrapSocialAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
-	<?= $this->render('html-header.php', []) ?>
+	<?= $this->render('_html-header.php', []) ?>
 </head>
 <body>
 <?php $this->beginBody() ?>

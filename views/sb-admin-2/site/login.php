@@ -8,8 +8,10 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\bootstrap\ActiveForm;
+
+use p2made\helpers\BSocial;
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */

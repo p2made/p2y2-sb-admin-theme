@@ -9,7 +9,7 @@
  */
 
 use yii\widgets\Breadcrumbs;
-use p2made\theme\sbAdmin\widgets\Alert;
+use p2made\widgets\Alert;
 ?>
 <div id="page-wrapper">
 	<div class="container-fluid">

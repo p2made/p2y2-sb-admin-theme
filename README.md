@@ -1,4 +1,4 @@
-P2SB Admin Theme v1.3.2
+P2SB Admin Theme v1.5.0
 =======================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
@@ -15,19 +15,19 @@ The preferred way to install P2SB Admin Theme is through [composer](http://getco
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-sb-admin-theme ">=1.3.2"
+composer require p2made/yii2-sb-admin-theme "*"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-sb-admin-theme ">=1.3.2"
+php composer.phar require p2made/yii2-sb-admin-theme "*"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-sb-admin-theme": ">=1.3.2"
+"p2made/yii2-sb-admin-theme": "*"
 ```
 
 to the requires section of your `composer.json` file & P2SB Admin Theme will be installed next time you run `composer update`.

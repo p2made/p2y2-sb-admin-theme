@@ -8,9 +8,14 @@
  * @license MIT
  */
 
-use yii\helpers\Html;
+use yii\bootstrap\Html;
 use yii\helpers\Url;
 use yii\bootstrap\Nav;
+use yii\bootstrap\ActiveForm;
+
+use p2made\helpers\FA;
+
+$arrowIcon = FA::i('arrow')->tag('span');
 ?>
 <section class="navbar-default sidebar" role="navigation">
 	<div class="sidebar-nav navbar-collapse">
@@ -26,11 +31,11 @@ use yii\bootstrap\Nav;
 				</div>
 			</li>
 			<li><?= Html::a(
-				'<i class="fa fa-dashboard fa-fw"></i> Dashboard',
+				FA::fw('dashboard') . 'Dashboard',
 				Yii::$app->homeUrl
 			) ?></li><!-- Dashboard -->
 			<li>
-				<a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+				<a href="#"><?= FA::fw('bar-chart-o') ?> Charts<?= $arrowIcon ?></a>
 				<?= Nav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
@@ -42,19 +47,19 @@ use yii\bootstrap\Nav;
 				]) ?>
 			</li><!-- Charts -->
 			<li><?= Html::a(
-				'<i class="fa fa-table fa-fw"></i> Tables',
+				FA::fw('table') . 'Tables',
 				Url::to(['/site/page', 'view' => 'tables'])
 			) ?></li><!-- Tables -->
 			<li><?= Html::a(
-				'<i class="fa fa-edit fa-fw"></i> Forms',
+				FA::fw('edit') . 'Forms',
 				Url::to(['/site/page', 'view' => 'forms'])
 			) ?></li><!-- Forms -->
 			<li>
-				<a href="#"><i class="fa fa-calendar fa-fw"></i> Calendar</a>
-				<!-- <a href="calendar.php"><i class="fa fa-calendar fa-fw"></i> Calendar</a> -->
+				<a href="#"><?= FA::fw('calendar') ?> Calendar</a>
+				<!-- <a href="calendar.php"><?= FA::fw('calendar') ?> Calendar</a> -->
 			</li><!-- Calendar -->
 			<li>
-				<a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+				<a href="#"><?= FA::fw('wrench') ?> UI Elements<?= $arrowIcon ?></a>
 				<?= Nav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
@@ -69,19 +74,21 @@ use yii\bootstrap\Nav;
 				]) ?>
 			</li><!-- UI Elements -->
 			<li>
-				<a href="#"><i class="fa fa-image fa-fw"></i> Icons<span class="fa arrow"></span></a>
+				<a href="#"><?= FA::fw('image') ?> Icons<?= $arrowIcon ?></a>
 				<?= Nav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
-						['label' => ' Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
-						['label' => ' Glyphicons', 'url' => ['/site/page', 'view' => 'glyphicons']],
+						['label' => 'Font Awesome', 'url' => ['/site/page', 'view' => 'font-awesome']],
+						['label' => 'Font Awesome Examples', 'url' => ['/site/page', 'view' => 'font-awesome-examples']],
+						['label' => 'Glyphicons', 'url' => ['/site/page', 'view' => 'glyphicons']],
+						['label' => 'Flag Icon CSS', 'url' => ['/site/page', 'view' => 'flag-icon-css']],
+						['label' => 'Bootstrap Social', 'url' => ['/site/page', 'view' => 'bootstrap-social']],
 					],
-				//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				]) ?>
-			</li><!-- UI Elements -->
+			</li><!-- Icons -->
 			<li>
-				<a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+				<a href="#"><?= FA::fw('sitemap') ?> Multi-Level Dropdown<?= $arrowIcon ?></a>
 				<ul class="nav nav-second-level">
 					<li>
 						<a href="#">Second Level Item</a>
@@ -90,7 +97,7 @@ use yii\bootstrap\Nav;
 						<a href="#">Second Level Item</a>
 					</li>
 					<li>
-						<a href="#">Third Level <span class="fa arrow"></span></a>
+						<a href="#">Third Level <?= $arrowIcon ?></a>
 						<ul class="nav nav-third-level">
 							<li>
 								<a href="#">Third Level Item</a>
@@ -109,7 +116,7 @@ use yii\bootstrap\Nav;
 				</ul>
 			</li><!-- Multi-Level Dropdown -->
 			<li>
-				<a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+				<a href="#"><?= FA::fw('files-o') ?> Sample Pages<?= $arrowIcon ?></a>
 				<?= Nav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
@@ -129,7 +136,7 @@ use yii\bootstrap\Nav;
 				]) ?>
 			</li><!-- Sample Pages -->
 			<li>
-				<a href="#"><i class="fa fa-coffee fa-fw"></i> Developer<span class="fa arrow"></span></a>
+				<a href="#"><?= FA::fw('coffee') ?> Developer<?= $arrowIcon ?></a>
 				<?= Nav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
