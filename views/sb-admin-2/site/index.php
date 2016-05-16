@@ -11,6 +11,7 @@
 use yii\bootstrap\Html;
 use yii\bootstrap\Button;
 use yii\bootstrap\ButtonDropdown;
+use yii\bootstrap\ActiveForm;
 
 use p2made\helpers\FA;
 
@@ -25,7 +26,6 @@ $this->title = 'Dashboard';
 
 /* @var $this yii\web\View */
 /* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
 ?>
 <div id="content-wrapper">
 
@@ -135,27 +135,10 @@ $this->title = 'Dashboard';
 									'<li class="divider"></li>',
 									['label' => 'Separated link', 'url' => '#'],
 								],
-								'options' => [],
+								'options' => ['class' => 'pull-right', 'role' => 'menu'],
 							],
-							'options' => [],
+							'options' => ['class' => 'btn btn-default btn-xs dropdown-toggle', 'type' => 'button'],
 						]) ?>
-						<div class="btn-group">
-							<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-								Actions
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu pull-right" role="menu">
-								<li><a href="#">Action</a>
-								</li>
-								<li><a href="#">Another action</a>
-								</li>
-								<li><a href="#">Something else here</a>
-								</li>
-								<li class="divider"></li>
-								<li><a href="#">Separated link</a>
-								</li>
-							</ul>
-						</div>
 					</div>
 				</div>
 				<!-- /.panel-heading -->
@@ -168,23 +151,20 @@ $this->title = 'Dashboard';
 				<div class="panel-heading">
 					<?= FA::i('bar-chart-o fa-fw') ?> Bar Chart Example
 					<div class="pull-right">
-						<div class="btn-group">
-							<button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-								Actions
-								<span class="caret"></span>
-							</button>
-							<ul class="dropdown-menu pull-right" role="menu">
-								<li><a href="#">Action</a>
-								</li>
-								<li><a href="#">Another action</a>
-								</li>
-								<li><a href="#">Something else here</a>
-								</li>
-								<li class="divider"></li>
-								<li><a href="#">Separated link</a>
-								</li>
-							</ul>
-						</div>
+						<?= ButtonDropdown::widget([
+							'label' => 'Actions',
+							'dropdown' => [
+								'items' => [
+									['label' => 'Action', 'url' => '#'],
+									['label' => 'Another action', 'url' => '#'],
+									['label' => 'Something else here', 'url' => '#'],
+									'<li class="divider"></li>',
+									['label' => 'Separated link', 'url' => '#'],
+								],
+								'options' => ['class' => 'pull-right', 'role' => 'menu'],
+							],
+							'options' => ['class' => 'btn btn-default btn-xs dropdown-toggle', 'type' => 'button'],
+						]) ?>
 					</div>
 				</div>
 				<!-- /.panel-heading -->
