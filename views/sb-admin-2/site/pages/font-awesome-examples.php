@@ -9,26 +9,19 @@
  */
 
 use yii\bootstrap\Html;
-
 use p2made\helpers\FA;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
-$this->title = 'Font Awesome Examples';
-
-/**
- * Putting demo data as arrays of constants to provide examples
- * of accessing all the social network name constants.
- */
-/**
- * End of demo data
- */
+// DEMO ONLY _DON'T_ use this in your production copy.
 
 /* @var $this yii\web\View */
+
+$this->title = 'Font Awesome Examples';
 ?>
 <div id="content-wrapper">
 
-	<!-- #pragma - 1 or more naked rows go in here -->
+	<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
 	<div class="row">
 		<div class="col-lg-12">
@@ -329,7 +322,7 @@ $this->title = 'Font Awesome Examples';
 					<div class="col-md-9 col-sm-8">
 						<p>
 							<em>p2made shortcut</em><br>
-							That hacky class is pretty verbose so <code>FA::ban($object, $options = [])FA::_BAN</code> is a whole lot more concise for <code>FA::_BAN</code> stacks.
+							That hacky class is pretty verbose so <code>FA::ban($object, $options = [])</code> is a whole lot more concise for <code>FA::_BAN</code> stacks.
 						</p>
 						<div class="alert alert-warning">
 							<ul class="fa-ul">
@@ -424,7 +417,7 @@ $this->title = 'Font Awesome Examples';
 		</div>
 	</div>
 
-	<!-- /#pragma -->
+	<!-- /### NOTE ### -->
 
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">

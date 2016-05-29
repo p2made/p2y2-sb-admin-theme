@@ -4,23 +4,21 @@
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
- * @package p2made/yii2-p2y2-things-demo
+ * @package p2made/yii2-sb-admin-theme
  * @license MIT
  */
 
 use yii\bootstrap\Html;
-use yii\widgets\Breadcrumbs;
 use p2made\helpers\FA;
-
 use p2made\helpers\GI;
 
-// load assets...
-p2made\demo\assets\ThingsDemoAsset::register($this);
+p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+
+// DEMO ONLY _DON'T_ use this in your production copy.
 
 /* @var $this yii\web\View */
 
 $this->title = 'Glyphicons';
-$this->params['breadcrumbs'][] = $this->title;
 
 /**
  * Putting demo data as arrays of constants to provide examples
@@ -303,21 +301,12 @@ $sizes = array(
  */
 ?>
 <div id="content-wrapper">
-	<?= Breadcrumbs::widget([
-		'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-	]) ?>
 
-	<div class="jumbotron">
-		<h1><?= Html::encode($this->title) ?></h1>
-		Icons bundled with
-		<a href="http://getbootstrap.com" target="_blank">
-			Bootstrap <?= FA::icon(FA::_EXTERNAL_LINK) ?>
-		</a>.
-	</div>
+	<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
-	<div class="body-content">
+	<div class="row">
+		<div class="col-lg-12">
 
-		<section>
 			<div class="panel panel-info">
 				<div class="panel-heading">All Glyphicons</div>
 				<div class="panel-body">
@@ -333,7 +322,19 @@ $sizes = array(
 					</div>
 				</div>
 			</div>
-		</section>
 
-	</div><!-- /.body-content -->
+		</div>
+	</div>
+
+	<!-- /### NOTE ### -->
+
+	<!-- this goes on every site file in p2made demos -->
+	<br><div class="alert alert-success" role="alert">
+		<ul class="fa-ul">
+			<li>
+				<?= FA::fw(FA::_CODE)->li()->size(FA::SIZE_LARGE) ?> <code><?= __FILE__ ?></code>
+			</li>
+		</ul>
+	</div>
+
 </div><!-- /#content-wrapper -->

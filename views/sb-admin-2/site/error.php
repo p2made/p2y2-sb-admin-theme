@@ -9,7 +9,6 @@
  */
 
 use yii\bootstrap\Html;
-
 use p2made\helpers\FA;
 
 $this->title = $name;

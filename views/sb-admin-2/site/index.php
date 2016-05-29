@@ -1,6 +1,6 @@
 <?php
 /**
- * blank.php
+ * index.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -12,7 +12,6 @@ use yii\bootstrap\Html;
 use yii\bootstrap\Button;
 use yii\bootstrap\ButtonDropdown;
 use yii\bootstrap\ActiveForm;
-
 use p2made\helpers\FA;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
@@ -22,9 +21,9 @@ p2made\assets\MorrisAsset::register($this);
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2made\demo\assets\MorrisDemoData::register($this);
 
-$this->title = 'Dashboard';
-
 /* @var $this yii\web\View */
+
+$this->title = 'Dashboard';
 /* @var $form yii\bootstrap\ActiveForm */
 ?>
 <div id="content-wrapper">

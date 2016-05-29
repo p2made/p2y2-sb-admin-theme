@@ -9,26 +9,22 @@
  */
 
 use yii\bootstrap\Html;
-use yii\bootstrap\ActiveForm;
+use yii\widgets\Breadcrumbs;use p2made\helpers\FA;
 
-use p2made\helpers\FA;
-
+// load assets...
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
-p2made\assets\FlotChartsAsset::register($this);
-p2made\assets\FlotTooltipAsset::register($this);
+p2made\assets\FlotBundleAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 p2made\demo\assets\FlotDemoData::register($this);
 
-$this->title = 'Flot Charts';
-
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+
+$this->title = 'Flot Charts';
 ?>
 <div id="content-wrapper">
 
-	<!-- #pragma - 1 or more naked rows go in here -->
+	<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
 	<div class="row">
 
@@ -123,7 +119,7 @@ $this->title = 'Flot Charts';
 
 	</div>
 
-	<!-- /#pragma -->
+	<!-- /### NOTE ### -->
 
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">

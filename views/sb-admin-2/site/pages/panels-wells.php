@@ -1,6 +1,6 @@
 <?php
 /**
- * blank.php
+ * panels-wells.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -9,20 +9,19 @@
  */
 
 use yii\bootstrap\Html;
-
 use p2made\helpers\FA;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
-$this->title = 'Panels and Wells';
+// DEMO ONLY _DON'T_ use this in your production copy.
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+
+$this->title = 'Panels and Wells';
 ?>
 <div id="content-wrapper">
 
-	<!-- #pragma - 1 or more naked rows go in here -->
+	<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
 	<div class="row">
 
@@ -360,7 +359,7 @@ $this->title = 'Panels and Wells';
 
 	</div>
 
-	<!-- /#pragma -->
+	<!-- /### NOTE ### -->
 
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">

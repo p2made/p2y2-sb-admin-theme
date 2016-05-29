@@ -227,12 +227,7 @@ use yii\bootstrap\NavBar;
 			<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
 			</li>
 			<li class="divider"></li>
-			<li>
-				<?= Html::a(
-					'<i class="fa fa-sign-out fa-fw"></i> Logout',
-					['/site/logout'],
-					['data-method' => 'post']
-				) ?>
+			<li><i class="fa fa-sign-out fa-fw"></i> Logout
 			</li>
 		</ul><!-- /.dropdown-user -->
 		<!-- /.dropdown-user -->

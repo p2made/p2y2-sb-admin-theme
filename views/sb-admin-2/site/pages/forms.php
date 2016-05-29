@@ -1,6 +1,6 @@
 <?php
 /**
- * blank.php
+ * forms.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2016
  * @author Pedro Plowman
@@ -9,24 +9,21 @@
  */
 
 use yii\bootstrap\Html;
-use yii\bootstrap\ActiveForm;
-
 use p2made\helpers\FA;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
-$this->title = 'Forms';
+// DEMO ONLY _DON'T_ use this in your production copy.
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+
+$this->title = 'Forms';
 ?>
 <div id="content-wrapper">
 
-	<!-- #pragma - 1 or more naked rows go in here -->
+	<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
 	<div class="row">
-
 		<div class="col-lg-12">
 
 			<div class="panel panel-default">
@@ -213,10 +210,9 @@ $this->title = 'Forms';
 			</div><!-- /.panel -->
 
 		</div>
-
 	</div>
 
-	<!-- /#pragma -->
+	<!-- /### NOTE ### -->
 
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">

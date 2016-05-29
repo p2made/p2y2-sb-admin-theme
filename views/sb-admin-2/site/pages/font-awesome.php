@@ -9,16 +9,15 @@
  */
 
 use yii\bootstrap\Html;
-
 use p2made\helpers\FA;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
-$this->title = 'Font Awesome';
+// DEMO ONLY _DON'T_ use this in your production copy.
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model \common\models\LoginForm */
+
+$this->title = 'Font Awesome';
 
 /**
  * Putting demo data as arrays of constants to provide examples
@@ -914,7 +913,7 @@ $iconGroups = array(
 ?>
 <div id="content-wrapper">
 
-	<!-- #pragma - 1 or more naked rows go in here -->
+	<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
 	<div class="row">
 		<div class="col-lg-12">
@@ -1302,7 +1301,7 @@ $iconGroups = array(
 		</div>
 	</div>
 
-	<!-- /#pragma -->
+	<!-- /### NOTE ### -->
 
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">
