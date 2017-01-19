@@ -240,7 +240,7 @@ $this->title = 'Dashboard';
 						</div>
 						<!-- /.col-lg-8 (nested) -->
 					</div>
-								</div>
+				</div>
 				<!-- /.panel-body -->
 			</div><!-- /.panel -->
 			<div class="panel panel-default">

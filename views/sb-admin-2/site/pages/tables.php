@@ -12,6 +12,7 @@ use yii\bootstrap\Html;
 use p2made\helpers\FA;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2made\assets\PdfMakeAsset::register($this);
 p2made\assets\DataTablesBundleAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.

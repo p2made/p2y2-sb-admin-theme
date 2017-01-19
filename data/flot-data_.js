@@ -1,5 +1,3 @@
-// Flot Charts sample data for SB Admin 2 template
-
 //Flot Line Chart
 $(document).ready(function() {
     console.log("document ready");
@@ -1102,6 +1100,7 @@ $(function() {
 });
 
 //Flot Moving Line Chart
+
 $(function() {
 
     var container = $("#flot-line-chart-moving");
@@ -1201,6 +1200,7 @@ $(function() {
 });
 
 //Flot Bar Chart
+
 $(function() {
 
     var barOptions = {
