@@ -69,6 +69,36 @@ To view pages in `site/pages/` you need to modify `actions()` in the `SiteContro
 	}
 ```
 
+And then...
+-----------
+
+P2SB Admin Theme uses P2Y2Things which requires some Yii 2 assets to be nullified to avoid conflicts through double loading. Modify `common/config/main.php` with...
+
+```
+	'components' => [
+		'assetManager' => [
+			'bundles' => [
+				'yii\web\JqueryAsset' => [
+					'sourcePath' => null, 'js' => [],
+				],
+				'yii\bootstrap\BootstrapAsset' => [
+					'sourcePath' => null, 'css' => [],
+				],
+				'yii\bootstrap\BootstrapPluginAsset' => [
+					'sourcePath' => null, 'js' => [],
+				],
+				'yii\jui\JuiAsset' => [
+					'sourcePath' => null, 'css' => [], 'js' => [],
+				],
+				'\rmrevin\yii\fontawesome\AssetBundle' => [
+					'sourcePath' => null, 'css' => [],
+				],
+			],
+		],
+		...
+	],
+```
+
 Customization
 -------------
 
@@ -102,6 +132,4 @@ To Do
 
 - Calendar page.
 - Original SB Admin.
-
-
 
