@@ -10,6 +10,7 @@
 
 use yii\bootstrap\Html;
 use p2made\helpers\FA;
+use p2made\helpers\BSocial;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2made\assets\CircleButtonsAsset::register($this);

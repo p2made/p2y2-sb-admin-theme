@@ -15,13 +15,13 @@ The preferred way to install P2SB Admin Theme is through [composer](http://getco
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-sb-admin-theme "*"
+composer require p2made/yii2-sb-admin-theme "dev-master"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-sb-admin-theme "*"
+php composer.phar require p2made/yii2-sb-admin-theme "dev-master"
 ```
 
 Alternatively add:
