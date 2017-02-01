@@ -10,9 +10,9 @@
 
 use yii\bootstrap\Html;
 use yii\helpers\Url;
-use yii\bootstrap\Nav;
 use yii\bootstrap\ActiveForm;
 
+use p2made\widgets\MetisNav;
 use p2made\helpers\FA;
 
 $arrowIcon = FA::i('arrow')->tag('span');
@@ -36,7 +36,7 @@ $arrowIcon = FA::i('arrow')->tag('span');
 			) ?></li><!-- Dashboard -->
 			<li>
 				<a href="#"><?= FA::fw('bar-chart-o') ?> Charts<?= $arrowIcon ?></a>
-				<?= Nav::widget([
+				<?= MetisNav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
@@ -60,7 +60,7 @@ $arrowIcon = FA::i('arrow')->tag('span');
 			</li><!-- Calendar -->
 			<li>
 				<a href="#"><?= FA::fw('wrench') ?> UI Elements<?= $arrowIcon ?></a>
-				<?= Nav::widget([
+				<?= MetisNav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
@@ -75,7 +75,7 @@ $arrowIcon = FA::i('arrow')->tag('span');
 			</li><!-- UI Elements -->
 			<li>
 				<a href="#"><?= FA::fw('image') ?> Icons<?= $arrowIcon ?></a>
-				<?= Nav::widget([
+				<?= MetisNav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
@@ -117,7 +117,7 @@ $arrowIcon = FA::i('arrow')->tag('span');
 			</li><!-- Multi-Level Dropdown -->
 			<li>
 				<a href="#"><?= FA::fw('files-o') ?> Sample Pages<?= $arrowIcon ?></a>
-				<?= Nav::widget([
+				<?= MetisNav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
@@ -137,7 +137,7 @@ $arrowIcon = FA::i('arrow')->tag('span');
 			</li><!-- Sample Pages -->
 			<li>
 				<a href="#"><?= FA::fw('coffee') ?> Developer<?= $arrowIcon ?></a>
-				<?= Nav::widget([
+				<?= MetisNav::widget([
 					'encodeLabels' => false,
 					'options' => ['class' => 'nav nav-second-level'],
 					'items' => [
