@@ -11,6 +11,7 @@
 use yii\bootstrap\Html;
 use p2made\helpers\FA;
 use p2made\helpers\BSocial;
+use yii\bootstrap\Button;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2made\assets\CircleButtonsAsset::register($this);
@@ -37,35 +38,35 @@ $this->title = 'Buttons';
 				<div class="panel-body">
 					<h4>Normal Buttons</h4>
 					<p>
-						<button type="button" class="btn btn-default">Default</button>
-						<button type="button" class="btn btn-primary">Primary</button>
-						<button type="button" class="btn btn-success">Success</button>
-						<button type="button" class="btn btn-info">Info</button>
-						<button type="button" class="btn btn-warning">Warning</button>
-						<button type="button" class="btn btn-danger">Danger</button>
-						<button type="button" class="btn btn-link">Link</button>
+	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-default']]);  ?>
+	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-primary']]);  ?>
+	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-success']]);  ?>
+	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-info']]);  ?>
+	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-warning']]);  ?>
+	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-danger']]);  ?>
+	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-link']]);  ?>
 					</p>
 					<br>
 					<h4>Disabled Buttons</h4>
 					<p>
-						<button type="button" class="btn btn-default disabled">Default</button>
-						<button type="button" class="btn btn-primary disabled">Primary</button>
-						<button type="button" class="btn btn-success disabled">Success</button>
-						<button type="button" class="btn btn-info disabled">Info</button>
-						<button type="button" class="btn btn-warning disabled">Warning</button>
-						<button type="button" class="btn btn-danger disabled">Danger</button>
-						<button type="button" class="btn btn-link disabled">Link</button>
+	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-default disabled']]);  ?>
+	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-primary disabled']]);  ?>
+	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-success disabled']]);  ?>
+	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-info disabled']]);  ?>
+	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-warning disabled']]);  ?>
+	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-danger disabled']]);  ?>
+	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-link disabled']]);  ?>
 					</p>
 					<br>
 					<h4>Button Sizes</h4>
 					<p>
-						<button type="button" class="btn btn-primary btn-lg">Large button</button>
-						<button type="button" class="btn btn-primary">Default button</button>
-						<button type="button" class="btn btn-primary btn-sm">Small button</button>
-						<button type="button" class="btn btn-primary btn-xs">Mini button</button>
+	<?= Button::widget(['label' => 'Large button', 'options' => ['class' => 'btn-primary btn-lg']]);  ?>
+	<?= Button::widget(['label' => 'Default button', 'options' => ['class' => 'btn-primary']]);  ?>
+	<?= Button::widget(['label' => 'Small button', 'options' => ['class' => 'btn-primary btn-sm']]);  ?>
+	<?= Button::widget(['label' => 'Mini button', 'options' => ['class' => 'btn-primary btn-xs']]);  ?>
 						<br>
 						<br>
-						<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+	<?= Button::widget(['label' => 'Block level button', 'options' => ['class' => 'btn-primary btn-lg btn-block']]);  ?>
 					</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
@@ -132,24 +133,24 @@ $this->title = 'Buttons';
 				<div class="panel-body">
 					<h4>Outline Buttons</h4>
 					<p>
-						<button type="button" class="btn btn-outline btn-default">Default</button>
-						<button type="button" class="btn btn-outline btn-primary">Primary</button>
-						<button type="button" class="btn btn-outline btn-success">Success</button>
-						<button type="button" class="btn btn-outline btn-info">Info</button>
-						<button type="button" class="btn btn-outline btn-warning">Warning</button>
-						<button type="button" class="btn btn-outline btn-danger">Danger</button>
-						<button type="button" class="btn btn-outline btn-link">Link</button>
+	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-outline btn-default']]);  ?>
+	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-outline btn-primary']]);  ?>
+	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-outline btn-success']]);  ?>
+	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-outline btn-info']]);  ?>
+	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-outline btn-warning']]);  ?>
+	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-outline btn-danger']]);  ?>
+	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-outline btn-link']]);  ?>
 					</p>
 					<br>
 					<h4>Outline Button Sizes</h4>
 					<p>
-						<button type="button" class="btn btn-outline btn-primary btn-lg">Large button</button>
-						<button type="button" class="btn btn-outline btn-primary">Default button</button>
-						<button type="button" class="btn btn-outline btn-primary btn-sm">Small button</button>
-						<button type="button" class="btn btn-outline btn-primary btn-xs">Mini button</button>
+	<?= Button::widget(['label' => 'Large button', 'options' => ['class' => 'btn-outline btn-primary btn-lg']]);  ?>
+	<?= Button::widget(['label' => 'Default button', 'options' => ['class' => 'btn-outline btn-primary']]);  ?>
+	<?= Button::widget(['label' => 'Small button', 'options' => ['class' => 'btn-outline btn-primary btn-sm']]);  ?>
+	<?= Button::widget(['label' => 'Mini button', 'options' => ['class' => 'btn-outline btn-primary btn-xs']]);  ?>
 						<br>
 						<br>
-						<button type="button" class="btn btn-outline btn-primary btn-lg btn-block">Block level button</button>
+	<?= Button::widget(['label' => 'Block level button', 'options' => ['class' => 'btn-outline btn-primary btn-lg btn-block']]);  ?>
 					</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
