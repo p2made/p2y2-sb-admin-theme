@@ -25,6 +25,7 @@ $this->title = 'Font Awesome Examples';
 	<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
 	<div class="row">
+
 		<div class="col-lg-12">
 
 			<p class="lead">
@@ -259,83 +260,18 @@ $this->title = 'Font Awesome Examples';
 
 			<section id="stacked">
 				<h2>Stacked Icons</h2>
-				<div class="row">
 					<div class="col-md-3 col-sm-4">
-						<div class="margin-bottom">
-							<?= FA::s(FA::_TWITTER, FA::_SQUARE_O, ['class' => 'fa-lg']) ?>
-							<code>FA::s(FA::_TWITTER, FA::_SQUARE_O)</code><br>
-
-							<?= FA::s(FA::vs(FA::_FLAG), FA::_CIRCLE, ['class' => 'fa-lg']) ?>
-							<code>FA::s(FA::vs(FA::_FLAG), FA::_CIRCLE)</code><br>
-
-							<?= FA::s(FA::vs(FA::_TERMINAL), FA::_SQUARE, ['class' => 'fa-lg']) ?>
-							<code>FA::s(FA::vs(FA::_TERMINAL), FA::_SQUARE)</code><br>
-						</div>
 					</div>
-					<div class="col-md-9 col-sm-8">
-						<p>
-							To stack multiple icons, use the <code>fa-stack</code> class on the parent, the <code>fa-stack-1x</code>
-							for the regularly sized icon, and <code>fa-stack-2x</code> for the larger icon. <code>fa-inverse</code>
-							can be used as an alternative icon color. You can even throw <a href="#larger">larger icon</a> classes on the parent
-							to get further control of sizing.
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-4">
-						<div class="margin-bottom">
-							<?= FA::is(
-								FA::i(FA::_BAN)->addCssClass('text-danger'),
-								FA::i(FA::_CAMERA),
-								['class' => 'fa-lg']
-							) ?>
-							<code>FA::is(FA::i(FA::_BAN)->addCssClass('text-danger'), FA::i(FA::_CAMERA))</code><br>
-						</div>
-					</div>
-					<div class="col-md-9 col-sm-8">
-						<div class="alert alert-success">
-							<ul class="fa-ul">
-								<li>
-									<?= FA::fw(FA::_INFO_CIRCLE)->li()->size(FA::SIZE_LARGE) ?>
-									<em>p2made shortcut</em><br>
-									The original FA classes don't allow for the larger icon in the stack to be on top like this example. My <code>FA::is($foreground, $background, $options = [])</code> class provides a hacky workaround.
-								</li>
-							</ul>
-						</div>
+					<div class="col-md-8 col-sm-7">
 						<div class="alert alert-warning">
 							<ul class="fa-ul">
 								<li>
 									<?= FA::fw(FA::_EXCLAMATION_TRIANGLE)->li()->size(FA::SIZE_LARGE) ?>
-									<em>p2made shortcut</em><br>
-									Like I said, <code>FA::is()</code> is hacky. It doesn't provide the recursion &amp; icons must be handed in fully formed. The size must be set as a class in <code>$options</code>.
+									There's something broken in the stacked icons. I don't yet know whether it's in <code>rmrevin/yii2-fontawesome</code> or my wrapper. Stay tuned for a fix.
 								</li>
 							</ul>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-3 col-sm-4">
-						<div class="margin-bottom">
-							<?= FA::ban(FA::i(FA::_CAMERA), ['class' => 'fa-lg']) ?>
-							<code>FA::ban(FA::i(FA::_CAMERA))</code><br>
-						</div>
-					</div>
-					<div class="col-md-9 col-sm-8">
-						<p>
-							<em>p2made shortcut</em><br>
-							That hacky class is pretty verbose so <code>FA::ban($object, $options = [])</code> is a whole lot more concise for <code>FA::_BAN</code> stacks.
-						</p>
-						<div class="alert alert-warning">
-							<ul class="fa-ul">
-								<li>
-									<?= FA::fw(FA::_EXCLAMATION_TRIANGLE)->li()->size(FA::SIZE_LARGE) ?>
-									<em>p2made shortcut</em><br>
-									It calls the first hacky effort so same limitations apply.
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
 			</section><!-- / Stacked Icons -->
 
 			<section id="bootstrap">
@@ -396,6 +332,51 @@ $this->title = 'Font Awesome Examples';
 				</div>
 			</section><!-- / Bootstrap 3 Examples -->
 
+			<section id="currency">
+				<h2>Currency Extras</h2>
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<p>
+							<?= FA::i('p2m-aud') ?>
+							<code>FA::i('p2m-aud')</code>
+						</p>
+						<p>
+							<?= FA::i('p2m-cad') ?>
+							<code>FA::i('p2m-cad')</code>
+						</p>
+						<p>
+							<?= FA::i('p2m-nzd') ?>
+							<code>FA::i('p2m-nzd')</code>
+						</p>
+						<p>
+							<?= FA::i('p2m-usd') ?>
+							<code>FA::i('p2m-usd')</code>
+						</p>
+
+					</div>
+					<div class="col-md-8 col-sm-7">
+						<div class="alert alert-success">
+							<ul class="fa-ul">
+								<li>
+									<?= FA::fw(FA::_INFO_CIRCLE)->li()->size(FA::SIZE_LARGE) ?>
+									<em>p2made extra</em><br>
+									If you load my <code>FontAwesomeAsset</code> by using <code>P2CoreAsset</code>, then some extra classes give country specific dollar icons. It's a bit of an experiment, the font isn't ideal, &amp; the resulting icons are wider than <code>fa-fw</code>, so <code>fw()</code> doesn't work well (&amp; is probably best avoided).
+								</li>
+							</ul>
+						</div>
+						<div class="alert alert-warning">
+							<ul class="fa-ul">
+								<li>
+									<?= FA::fw(FA::_EXCLAMATION_TRIANGLE)->li()->size(FA::SIZE_LARGE) ?>
+									<em>p2made shortcut</em><br>
+									No convenient constants for these ones... for now at least.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section><!-- / Currency Extras -->
+
 	<!--
 			<section id="custom">
 				<h2>Custom CSS</h2>
@@ -416,6 +397,7 @@ $this->title = 'Font Awesome Examples';
 	-->
 
 		</div>
+
 	</div>
 
 	<!-- /### NOTE ### -->

@@ -32,7 +32,7 @@ $arrowIcon = FA::i('arrow')->tag('span');
 				</div>
 			</li>
 			<li><?= Html::a(
-				FA::fw('dashboard') . 'Dashboard',
+				FA::fw('dashboard') . ' Dashboard',
 				Yii::$app->homeUrl
 			) ?></li><!-- Dashboard -->
 			<li>
@@ -55,10 +55,10 @@ $arrowIcon = FA::i('arrow')->tag('span');
 				FA::fw('edit') . 'Forms',
 				Url::to(['/site/page', 'view' => 'forms'])
 			) ?></li><!-- Forms -->
-			<li>
-				<a href="#"><?= FA::fw('calendar') ?> Calendar</a>
-				<!-- <a href="calendar.php"><?= FA::fw('calendar') ?> Calendar</a> -->
-			</li><!-- Calendar -->
+			<li><?= Html::a(
+				FA::fw('calendar') . 'Calendar',
+				Url::to(['/site/page', 'view' => 'calendar'])
+			) ?></li><!-- Calendar -->
 			<li>
 				<a href="#"><?= FA::fw('wrench') ?> UI Elements<?= $arrowIcon ?></a>
 				<?= MetisNav::widget([

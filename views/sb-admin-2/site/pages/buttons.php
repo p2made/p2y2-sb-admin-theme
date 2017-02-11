@@ -10,9 +10,9 @@
  */
 
 use yii\bootstrap\Html;
+use yii\bootstrap\Button;
 use p2made\helpers\FA;
 use p2made\helpers\BSocial;
-use yii\bootstrap\Button;
 
 p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2made\assets\CircleButtonsAsset::register($this);
@@ -26,7 +26,7 @@ $this->title = 'Buttons';
 ?>
 <div id="content-wrapper">
 
-	<!-- ### NOTE ### - 1 or more naked rows go in here -->
+<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
 	<div class="row">
 
@@ -39,35 +39,32 @@ $this->title = 'Buttons';
 				<div class="panel-body">
 					<h4>Normal Buttons</h4>
 					<p>
-	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-default']]);  ?>
-	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-primary']]);  ?>
-	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-success']]);  ?>
-	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-info']]);  ?>
-	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-warning']]);  ?>
-	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-danger']]);  ?>
-	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-link']]);  ?>
-					</p>
-					<br>
+	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-default']]) ?>
+	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-primary']]) ?>
+	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-success']]) ?>
+	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-info']]) ?>
+	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-warning']]) ?>
+	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-danger']]) ?>
+	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-link']]) ?>
+					</p><br>
 					<h4>Disabled Buttons</h4>
 					<p>
-	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-default disabled']]);  ?>
-	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-primary disabled']]);  ?>
-	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-success disabled']]);  ?>
-	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-info disabled']]);  ?>
-	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-warning disabled']]);  ?>
-	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-danger disabled']]);  ?>
-	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-link disabled']]);  ?>
-					</p>
-					<br>
+	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-default disabled']]) ?>
+	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-primary disabled']]) ?>
+	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-success disabled']]) ?>
+	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-info disabled']]) ?>
+	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-warning disabled']]) ?>
+	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-danger disabled']]) ?>
+	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-link disabled']]) ?>
+					</p><br>
 					<h4>Button Sizes</h4>
 					<p>
-	<?= Button::widget(['label' => 'Large button', 'options' => ['class' => 'btn-primary btn-lg']]);  ?>
-	<?= Button::widget(['label' => 'Default button', 'options' => ['class' => 'btn-primary']]);  ?>
-	<?= Button::widget(['label' => 'Small button', 'options' => ['class' => 'btn-primary btn-sm']]);  ?>
-	<?= Button::widget(['label' => 'Mini button', 'options' => ['class' => 'btn-primary btn-xs']]);  ?>
-						<br>
-						<br>
-	<?= Button::widget(['label' => 'Block level button', 'options' => ['class' => 'btn-primary btn-lg btn-block']]);  ?>
+	<?= Button::widget(['label' => 'Large button', 'options' => ['class' => 'btn-primary btn-lg']]) ?>
+	<?= Button::widget(['label' => 'Default button', 'options' => ['class' => 'btn-primary']]) ?>
+	<?= Button::widget(['label' => 'Small button', 'options' => ['class' => 'btn-primary btn-sm']]) ?>
+	<?= Button::widget(['label' => 'Mini button', 'options' => ['class' => 'btn-primary btn-xs']]) ?>
+					<br><br>
+	<?= Button::widget(['label' => 'Block level button', 'options' => ['class' => 'btn-primary btn-lg btn-block']]) ?>
 					</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
@@ -78,48 +75,36 @@ $this->title = 'Buttons';
 				</div><!-- /.panel-heading -->
 				<div class="panel-body">
 					<h4>Normal Circle Buttons</h4>
-					<button type="button" class="btn btn-default btn-circle"><i class="fa fa-check"></i>
-					</button>
-					<button type="button" class="btn btn-primary btn-circle"><i class="fa fa-list"></i>
-					</button>
-					<button type="button" class="btn btn-success btn-circle"><i class="fa fa-link"></i>
-					</button>
-					<button type="button" class="btn btn-info btn-circle"><i class="fa fa-check"></i>
-					</button>
-					<button type="button" class="btn btn-warning btn-circle"><i class="fa fa-times"></i>
-					</button>
-					<button type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i>
-					</button>
-					<br>
-					<br>
+	<?= Button::widget(['label' => FA::i('check'), 'options' => ['class' => 'btn-default btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('list'), 'options' => ['class' => 'btn-primary btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('link'), 'options' => ['class' => 'btn-success btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('check'), 'options' => ['class' => 'btn-info btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('times'), 'options' => ['class' => 'btn-warning btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('heart'), 'options' => ['class' => 'btn-danger btn-circle'], 'encodeLabel' => false]) ?>
+					<br><br>
 					<h4>Large Circle Buttons</h4>
-					<button type="button" class="btn btn-default btn-circle btn-lg"><i class="fa fa-check"></i>
-					</button>
-					<button type="button" class="btn btn-primary btn-circle btn-lg"><i class="fa fa-list"></i>
-					</button>
-					<button type="button" class="btn btn-success btn-circle btn-lg"><i class="fa fa-link"></i>
-					</button>
-					<button type="button" class="btn btn-info btn-circle btn-lg"><i class="fa fa-check"></i>
-					</button>
-					<button type="button" class="btn btn-warning btn-circle btn-lg"><i class="fa fa-times"></i>
-					</button>
-					<button type="button" class="btn btn-danger btn-circle btn-lg"><i class="fa fa-heart"></i>
-					</button>
-					<br>
-					<br>
+	<?= Button::widget(['label' => FA::i('check'), 'options' => ['class' => 'btn-default btn-circle btn-lg'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('list'), 'options' => ['class' => 'btn-primary btn-circle btn-lg'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('link'), 'options' => ['class' => 'btn-success btn-circle btn-lg'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('check'), 'options' => ['class' => 'btn-info btn-circle btn-lg'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('times'), 'options' => ['class' => 'btn-warning btn-circle btn-lg'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('heart'), 'options' => ['class' => 'btn-danger btn-circle btn-lg'], 'encodeLabel' => false]) ?>
+					<br><br>
 					<h4>Extra Large Circle Buttons</h4>
-					<button type="button" class="btn btn-default btn-circle btn-xl"><i class="fa fa-check"></i>
-					</button>
-					<button type="button" class="btn btn-primary btn-circle btn-xl"><i class="fa fa-list"></i>
-					</button>
-					<button type="button" class="btn btn-success btn-circle btn-xl"><i class="fa fa-link"></i>
-					</button>
-					<button type="button" class="btn btn-info btn-circle btn-xl"><i class="fa fa-check"></i>
-					</button>
-					<button type="button" class="btn btn-warning btn-circle btn-xl"><i class="fa fa-times"></i>
-					</button>
-					<button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fa fa-heart"></i>
-					</button>
+	<?= Button::widget(['label' => FA::i('check'), 'options' => ['class' => 'btn-default btn-circle btn-xl'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('list'), 'options' => ['class' => 'btn-primary btn-circle btn-xl'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('link'), 'options' => ['class' => 'btn-success btn-circle btn-xl'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('check'), 'options' => ['class' => 'btn-info btn-circle btn-xl'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('times'), 'options' => ['class' => 'btn-warning btn-circle btn-xl'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('heart'), 'options' => ['class' => 'btn-danger btn-circle btn-xl'], 'encodeLabel' => false]) ?>
+					<br><br>
+					<h4>Outline Circle Buttons</h4>
+	<?= Button::widget(['label' => FA::i('check'), 'options' => ['class' => 'btn-default btn-outline btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('list'), 'options' => ['class' => 'btn-primary btn-outline btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('link'), 'options' => ['class' => 'btn-success btn-outline btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('check'), 'options' => ['class' => 'btn-info btn-outline btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('times'), 'options' => ['class' => 'btn-warning btn-outline btn-circle'], 'encodeLabel' => false]) ?>
+	<?= Button::widget(['label' => FA::i('heart'), 'options' => ['class' => 'btn-danger btn-outline btn-circle'], 'encodeLabel' => false]) ?>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
 
@@ -134,24 +119,24 @@ $this->title = 'Buttons';
 				<div class="panel-body">
 					<h4>Outline Buttons</h4>
 					<p>
-	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-outline btn-default']]);  ?>
-	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-outline btn-primary']]);  ?>
-	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-outline btn-success']]);  ?>
-	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-outline btn-info']]);  ?>
-	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-outline btn-warning']]);  ?>
-	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-outline btn-danger']]);  ?>
-	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-outline btn-link']]);  ?>
+	<?= Button::widget(['label' => 'Default', 'options' => ['class' => 'btn-outline btn-default']]) ?>
+	<?= Button::widget(['label' => 'Primary', 'options' => ['class' => 'btn-outline btn-primary']]) ?>
+	<?= Button::widget(['label' => 'Success', 'options' => ['class' => 'btn-outline btn-success']]) ?>
+	<?= Button::widget(['label' => 'Info', 'options' => ['class' => 'btn-outline btn-info']]) ?>
+	<?= Button::widget(['label' => 'Warning', 'options' => ['class' => 'btn-outline btn-warning']]) ?>
+	<?= Button::widget(['label' => 'Danger', 'options' => ['class' => 'btn-outline btn-danger']]) ?>
+	<?= Button::widget(['label' => 'Link', 'options' => ['class' => 'btn-outline btn-link']]) ?>
 					</p>
 					<br>
 					<h4>Outline Button Sizes</h4>
 					<p>
-	<?= Button::widget(['label' => 'Large button', 'options' => ['class' => 'btn-outline btn-primary btn-lg']]);  ?>
-	<?= Button::widget(['label' => 'Default button', 'options' => ['class' => 'btn-outline btn-primary']]);  ?>
-	<?= Button::widget(['label' => 'Small button', 'options' => ['class' => 'btn-outline btn-primary btn-sm']]);  ?>
-	<?= Button::widget(['label' => 'Mini button', 'options' => ['class' => 'btn-outline btn-primary btn-xs']]);  ?>
+	<?= Button::widget(['label' => 'Large button', 'options' => ['class' => 'btn-outline btn-primary btn-lg']]) ?>
+	<?= Button::widget(['label' => 'Default button', 'options' => ['class' => 'btn-outline btn-primary']]) ?>
+	<?= Button::widget(['label' => 'Small button', 'options' => ['class' => 'btn-outline btn-primary btn-sm']]) ?>
+	<?= Button::widget(['label' => 'Mini button', 'options' => ['class' => 'btn-outline btn-primary btn-xs']]) ?>
 						<br>
 						<br>
-	<?= Button::widget(['label' => 'Block level button', 'options' => ['class' => 'btn-outline btn-primary btn-lg btn-block']]);  ?>
+	<?= Button::widget(['label' => 'Block level button', 'options' => ['class' => 'btn-outline btn-primary btn-lg btn-block']]) ?>
 					</p>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
@@ -162,58 +147,55 @@ $this->title = 'Buttons';
 				</div><!-- /.panel-heading -->
 				<div class="panel-body">
 					<h4>Social Buttons</h4>
-					<a class="btn btn-block btn-social btn-bitbucket">
-						<i class="fa fa-bitbucket"></i> Sign in with Bitbucket
-					</a>
-					<a class="btn btn-block btn-social btn-dropbox">
-						<i class="fa fa-dropbox"></i> Sign in with Dropbox
-					</a>
-					<a class="btn btn-block btn-social btn-facebook">
-						<i class="fa fa-facebook"></i> Sign in with Facebook
-					</a>
-					<a class="btn btn-block btn-social btn-flickr">
-						<i class="fa fa-flickr"></i> Sign in with Flickr
-					</a>
-					<a class="btn btn-block btn-social btn-github">
-						<i class="fa fa-github"></i> Sign in with GitHub
-					</a>
-					<a class="btn btn-block btn-social btn-google-plus">
-						<i class="fa fa-google-plus"></i> Sign in with Google
-					</a>
-					<a class="btn btn-block btn-social btn-instagram">
-						<i class="fa fa-instagram"></i> Sign in with Instagram
-					</a>
-					<a class="btn btn-block btn-social btn-linkedin">
-						<i class="fa fa-linkedin"></i> Sign in with LinkedIn
-					</a>
-					<a class="btn btn-block btn-social btn-pinterest">
-						<i class="fa fa-pinterest"></i> Sign in with Pinterest
-					</a>
-					<a class="btn btn-block btn-social btn-tumblr">
-						<i class="fa fa-tumblr"></i> Sign in with Tumblr
-					</a>
-					<a class="btn btn-block btn-social btn-twitter">
-						<i class="fa fa-twitter"></i> Sign in with Twitter
-					</a>
-					<a class="btn btn-block btn-social btn-vk">
-						<i class="fa fa-vk"></i> Sign in with VK
-					</a>
-
-					<hr>
-
-					<div class="text-center">
-						<a class="btn btn-social-icon btn-bitbucket"><i class="fa fa-bitbucket"></i></a>
-						<a class="btn btn-social-icon btn-dropbox"><i class="fa fa-dropbox"></i></a>
-						<a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
-						<a class="btn btn-social-icon btn-flickr"><i class="fa fa-flickr"></i></a>
-						<a class="btn btn-social-icon btn-github"><i class="fa fa-github"></i></a>
-						<a class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
-						<a class="btn btn-social-icon btn-instagram"><i class="fa fa-instagram"></i></a>
-						<a class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
-						<a class="btn btn-social-icon btn-pinterest"><i class="fa fa-pinterest"></i></a>
-						<a class="btn btn-social-icon btn-tumblr"><i class="fa fa-tumblr"></i></a>
-						<a class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-						<a class="btn btn-social-icon btn-vk"><i class="fa fa-vk"></i></a>
+					<div class="col-lg-6">
+	<?= BSocial::b('adn') ?>
+	<?= BSocial::b('bitbucket') ?>
+	<?= BSocial::b('dropbox') ?>
+	<?= BSocial::b('facebook') ?>
+	<?= BSocial::b('flickr') ?>
+	<?= BSocial::b('foursquare') ?>
+	<?= BSocial::b('github') ?>
+	<?= BSocial::b('google') ?>
+	<?= BSocial::b('instagram') ?>
+	<?= BSocial::b('linkedin') ?>
+					</div>
+					<div class="col-lg-6">
+	<?= BSocial::b('microsoft') ?>
+	<?= BSocial::b('openid') ?>
+	<?= BSocial::b('pinterest') ?>
+	<?= BSocial::b('reddit') ?>
+	<?= BSocial::b('soundcloud') ?>
+	<?= BSocial::b('tumblr') ?>
+	<?= BSocial::b('twitter') ?>
+	<?= BSocial::b('vimeo') ?>
+	<?= BSocial::b('vk') ?>
+	<?= BSocial::b('yahoo') ?>
+					</div>
+					<div class="col-lg-12 text-center">
+						<hr>
+	<?= BSocial::i('adn') ?>
+	<?= BSocial::i('bitbucket') ?>
+	<?= BSocial::i('dropbox') ?>
+	<?= BSocial::i('facebook') ?>
+	<?= BSocial::i('flickr') ?>
+	<?= BSocial::i('foursquare') ?>
+	<?= BSocial::i('github') ?>
+	<?= BSocial::i('google') ?>
+	<?= BSocial::i('instagram') ?>
+	<?= BSocial::i('linkedin') ?>
+					</div>
+					<div class="col-lg-12 text-center">
+						<br>
+	<?= BSocial::i('microsoft') ?>
+	<?= BSocial::i('openid') ?>
+	<?= BSocial::i('pinterest') ?>
+	<?= BSocial::i('reddit') ?>
+	<?= BSocial::i('soundcloud') ?>
+	<?= BSocial::i('tumblr') ?>
+	<?= BSocial::i('twitter') ?>
+	<?= BSocial::i('vimeo') ?>
+	<?= BSocial::i('vk') ?>
+	<?= BSocial::i('yahoo') ?>
 					</div>
 				</div><!-- /.panel-body -->
 			</div><!-- /.panel -->
@@ -222,7 +204,7 @@ $this->title = 'Buttons';
 
 	</div>
 
-	<!-- /### NOTE ### -->
+<!-- /### NOTE ### -->
 
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">
@@ -232,5 +214,4 @@ $this->title = 'Buttons';
 			</li>
 		</ul>
 	</div>
-
 </div><!-- /#content-wrapper -->

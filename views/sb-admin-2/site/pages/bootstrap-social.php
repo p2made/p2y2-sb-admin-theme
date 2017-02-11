@@ -27,11 +27,11 @@ $this->title = 'Bootstrap Social';
  * of accessing all the social network name constants.
  */
 $socialIcons = array(
-	BSocial::ADN, BSocial::BITBUCKET, BSocial::DROPBOX, BSocial::FACEBOOK, BSocial::FLICKR,
-	BSocial::FOURSQUARE, BSocial::GITHUB, BSocial::GOOGLE, BSocial::INSTAGRAM, BSocial::LINKEDIN,
-	BSocial::MICROSOFT, BSocial::ODNOKLASSNIKI, BSocial::OPENID, BSocial::PINTEREST,
-	BSocial::REDDIT, BSocial::SOUNDCLOUD, BSocial::TUMBLR, BSocial::TWITTER, BSocial::VIMEO,
-	BSocial::VK, BSocial::YAHOO,
+BSocial::ADN, BSocial::BITBUCKET, BSocial::DROPBOX, BSocial::FACEBOOK, BSocial::FLICKR,
+BSocial::FOURSQUARE, BSocial::GITHUB, BSocial::GOOGLE, BSocial::INSTAGRAM, BSocial::LINKEDIN,
+BSocial::MICROSOFT, BSocial::ODNOKLASSNIKI, BSocial::OPENID, BSocial::PINTEREST,
+BSocial::REDDIT, BSocial::SOUNDCLOUD, BSocial::TUMBLR, BSocial::TWITTER, BSocial::VIMEO,
+BSocial::VK, BSocial::YAHOO,
 );
 $sizes = [BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL];
 /**
@@ -40,23 +40,7 @@ $sizes = [BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL];
 ?>
 <div id="content-wrapper">
 
-	<!-- ### NOTE ### - 1 or more naked rows go in here -->
-
-	<div class="row">
-		<div class="col-lg-12">
-
-			<p>
-				Social Sign-In Buttons made in pure CSS based on
-				<a href="https://getbootstrap.com/">Bootstrap</a> and
-				<a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>!
-				... &amp; integrated into Yii 2!
-			</p>
-			<p>
-				Here is <a href="https://lipis.github.io/bootstrap-social/" target="_blank">Bootstrap Social <?= FA::icon(FA::_EXTERNAL_LINK) ?></a> as helpers for <a href="http://www.yiiframework.com" target="_blank">Yii2 <?= FA::icon(FA::_EXTERNAL_LINK) ?></a>. Modeled on <a href="https://github.com/rmrevin/yii2-fontawesome" target="_blank">rmrevin/yii2-fontawesome <?= FA::icon(FA::_EXTERNAL_LINK) ?></a> and working in much the same way.
-			</p>
-
-		</div>
-	</div>
+<!-- ### NOTE ### - 1 or more naked rows go in here -->
 
 	<div class="row">
 		<div class="col-md-6">
@@ -299,7 +283,7 @@ $sizes = [BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL];
 
 	</div>
 
-	<!-- /### NOTE ### -->
+<!-- /### NOTE ### -->
 
 	<!-- this goes on every site file in p2made demos -->
 	<br><div class="alert alert-success" role="alert">
@@ -309,5 +293,4 @@ $sizes = [BSocial::SIZE_LARGE, BSocial::SIZE_SMALL, BSocial::SIZE_XSMALL];
 			</li>
 		</ul>
 	</div>
-
 </div><!-- /#content-wrapper -->
