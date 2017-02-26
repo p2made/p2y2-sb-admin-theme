@@ -11,12 +11,12 @@
 
 use yii\bootstrap\Html;
 use yii\bootstrap\Button;
-use p2made\helpers\FA;
-use p2made\helpers\BSocial;
+use p2m\helpers\FA;
+use p2m\helpers\BSocial;
 
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
-p2made\assets\CircleButtonsAsset::register($this);
-p2made\assets\BootstrapSocialAsset::register($this);
+p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\assets\CircleButtonsAsset::register($this);
+p2m\assets\BootstrapSocialAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 

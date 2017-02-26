@@ -1,36 +1,43 @@
-P2SB Admin Theme v1.6.3
-================
+P2 SB Admin Theme v2.0.0
+=================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
 
-P2SB Admin Theme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
+P2 SB Admin Theme contains [AssetBundles for Yii 2.0 Framework](http://www.yiiframework.com/doc-2.0/guide-structure-assets.html)
 which registers the CSS & JS files for the SB Admin 2 UI.
 
 It declares [`yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things) as a dependancy.
 
+¡¡ IMPORTANT !!
+===============
+
+Version 2.0.0 of all my Yii2 add-ons marks a breaking change where I've shortened my namespaces.
+In P2 SB Admin Theme `p2made\theme\sbAdmin\rest\of\namespace` is now `p2m\sbAdmin\rest\of\namespace`.
+In the rest of my Yii2 add-ons `p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
+
 Installation
 ------------
 
-The preferred way to install P2SB Admin Theme is through [composer](http://getcomposer.org/download/).
+The preferred way to install P2 SB Admin Theme is through [composer](http://getcomposer.org/download/).
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-sb-admin-theme "^1.5"
+composer require p2made/yii2-sb-admin-theme "^2.0"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-sb-admin-theme "^1.5"
+php composer.phar require p2made/yii2-sb-admin-theme "^2.0"
 ```
 
 Alternatively add:
 
 ```
-"p2made/yii2-sb-admin-theme": "^1.5"
+	"p2made/yii2-sb-admin-theme": "^2.0"
 ```
 
-to the requires section of your `composer.json` file & P2SB Admin Theme will be installed next time you run `composer update`.
+to the requires section of your `composer.json` file & P2 SB Admin Theme will be installed next time you run `composer update`.
 
 The files are installed via Yii's recommended usage of the `fxp/composer-asset-plugin`.
 
@@ -72,7 +79,7 @@ To view pages in `site/pages/` you need to modify `actions()` in the `SiteContro
 And then...
 -----------
 
-P2SB Admin Theme uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-things) which requires some Yii 2 assets to be nullified to avoid conflicts through double loading. Modify `common/config/main.php` with...
+P2 SB Admin Theme uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-things) which requires some Yii 2 assets to be nullified to avoid conflicts through double loading. Modify `common/config/main.php` with...
 
 ```
 	'components' => [

@@ -14,8 +14,8 @@ use yii\bootstrap\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-p2made\theme\sbAdmin\assets\SBAdmin2UserAsset::register($this);
-p2made\assets\BootstrapSocialAsset::register($this);
+p2m\sbAdmin\assets\SBAdmin2UserAsset::register($this);
+p2m\assets\BootstrapSocialAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>

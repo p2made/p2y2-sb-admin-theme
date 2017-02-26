@@ -10,14 +10,14 @@
  */
 
 use yii\bootstrap\Html;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
-p2made\assets\PdfMakeAsset::register($this);
-p2made\assets\DataTablesBundleAsset::register($this);
+p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\assets\PdfMakeAsset::register($this);
+p2m\assets\DataTablesBundleAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\demo\assets\DataTablesDemoAsset::register($this);
+p2m\demo\assets\DataTablesDemoAsset::register($this);
 
 /* @var $this yii\web\View */
 

@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+ * p2m\sbAdmin\assets\SBAdmin2Asset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\theme\sbAdmin\assets\SBAdmin2Asset',
+ *     'p2m\sbAdmin\assets\SBAdmin2Asset',
  */
 
-namespace p2made\theme\sbAdmin\assets;
+namespace p2m\sbAdmin\assets;
 
-class SBAdmin2Asset extends \p2made\assets\base\P2AssetBundle
+class SBAdmin2Asset extends \p2m\assets\base\P2AssetBundle
 {
 	private $resourceData = array(
 
@@ -34,8 +34,8 @@ class SBAdmin2Asset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
-			'p2made\assets\MetisMenuAsset',
+			'p2m\assets\P2CoreAsset',
+			'p2m\assets\MetisMenuAsset',
 		],
 
 	);

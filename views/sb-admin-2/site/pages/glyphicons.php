@@ -10,10 +10,10 @@
  */
 
 use yii\bootstrap\Html;
-use p2made\helpers\FA;
-use p2made\helpers\GI;
+use p2m\helpers\FA;
+use p2m\helpers\GI;
 
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
 

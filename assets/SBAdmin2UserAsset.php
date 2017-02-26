@@ -11,15 +11,15 @@
 
 /**
  * Load this asset with...
- * p2made\theme\sbAdmin\assets\SBAdmin2UserAsset::register($this);
+ * p2m\sbAdmin\assets\SBAdmin2UserAsset::register($this);
  *
  * or specify as a dependency with...
- *     'p2made\theme\sbAdmin\assets\SBAdmin2UserAsset',
+ *     'p2m\sbAdmin\assets\SBAdmin2UserAsset',
  */
 
-namespace p2made\theme\sbAdmin\assets;
+namespace p2m\sbAdmin\assets;
 
-class SBAdmin2UserAsset extends \p2made\assets\base\P2AssetBundle
+class SBAdmin2UserAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.0.0';
 
@@ -34,7 +34,7 @@ class SBAdmin2UserAsset extends \p2made\assets\base\P2AssetBundle
 		],
 
 		'depends' => [
-			'p2made\assets\P2CoreAsset',
+			'p2m\assets\P2CoreAsset',
 		],
 
 	);

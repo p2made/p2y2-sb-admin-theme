@@ -10,13 +10,13 @@
  */
 
 use yii\bootstrap\Html;
-use p2made\helpers\FA;
+use p2m\helpers\FA;
 
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
-p2made\assets\MorrisAsset::register($this);
+p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\assets\MorrisAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\demo\assets\MorrisDemoData::register($this);
+p2m\demo\assets\MorrisDemoData::register($this);
 
 /* @var $this yii\web\View */
 

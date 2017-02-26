@@ -13,8 +13,8 @@ use yii\bootstrap\Html;
 use yii\helpers\Url;
 use yii\bootstrap\ActiveForm;
 
-use p2made\widgets\MetisNav;
-use p2made\helpers\FA;
+use p2m\widgets\MetisNav;
+use p2m\helpers\FA;
 
 $arrowIcon = FA::i('arrow')->tag('span');
 ?>

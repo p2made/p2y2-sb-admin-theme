@@ -10,14 +10,14 @@
  */
 
 use yii\bootstrap\Html;
-use p2made\helpers\FA;
-use p2made\helpers\FI;
+use p2m\helpers\FA;
+use p2m\helpers\FI;
 
-p2made\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
-p2made\assets\FlagIconCssAsset::register($this);
+p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\assets\FlagIconCssAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
-p2made\demo\assets\FlagIconsDemoAsset::register($this);
+p2m\demo\assets\FlagIconsDemoAsset::register($this);
 
 /* @var $this yii\web\View */
 
