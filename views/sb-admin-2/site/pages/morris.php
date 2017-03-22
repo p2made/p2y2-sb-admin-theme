@@ -12,7 +12,7 @@
 use yii\bootstrap\Html;
 use p2m\helpers\FA;
 
-p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2m\assets\MorrisAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.

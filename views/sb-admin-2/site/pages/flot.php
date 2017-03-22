@@ -13,7 +13,7 @@ use yii\bootstrap\Html;
 use yii\widgets\Breadcrumbs;use p2m\helpers\FA;
 
 // load assets...
-p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2m\assets\FlotBundleAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.

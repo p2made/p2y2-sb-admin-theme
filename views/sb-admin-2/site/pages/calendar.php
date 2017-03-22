@@ -16,7 +16,7 @@ use p2m\helpers\FA;
 use p2m\models\FullCalendarEvent;
 use p2m\widgets\FullCalendarWidget;
 
-p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\sbAdmin\assets\SBAdmin2Asset::register($this);
 
 /* @var $this yii\web\View */
 $this->title = 'Calendar';

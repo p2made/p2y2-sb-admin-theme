@@ -14,7 +14,7 @@ use yii\bootstrap\Button;
 use p2m\helpers\FA;
 use p2m\helpers\BSocial;
 
-p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2m\assets\CircleButtonsAsset::register($this);
 p2m\assets\BootstrapSocialAsset::register($this);
 

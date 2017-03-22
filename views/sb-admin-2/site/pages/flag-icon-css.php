@@ -13,7 +13,7 @@ use yii\bootstrap\Html;
 use p2m\helpers\FA;
 use p2m\helpers\FI;
 
-p2m\theme\sbAdmin\assets\SBAdmin2Asset::register($this);
+p2m\sbAdmin\assets\SBAdmin2Asset::register($this);
 p2m\assets\FlagIconCssAsset::register($this);
 
 // DEMO ONLY _DON'T_ use this in your production copy.
