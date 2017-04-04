@@ -1,4 +1,4 @@
-P2 SB Admin Theme v2.4.1
+P2 SB Admin Theme v2.3.2
 =================
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
