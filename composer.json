@@ -21,14 +21,14 @@
 		"source": "https://github.com/p2made/yii2-sb-admin-theme"
 	},
 
-	"version": "2.4.1",
+	"version": "2.5.0",
 	"minimum-stability": "dev",
 
 	"require": {
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "^2.0",
-		"p2made/yii2-p2y2-things": "^2.6",
-		"p2made/yii2-p2y2-things-demo": "^2.6"
+		"p2made/yii2-p2y2-things": "^2.7",
+		"p2made/yii2-p2y2-things-demo": "^2.7"
 	},
 	"autoload": {
 		"psr-4": {
