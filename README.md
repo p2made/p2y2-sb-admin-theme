@@ -6,7 +6,6 @@ P2 SB Admin Theme v2.5.1
 [![Monthly Downloads](https://poser.pugx.org/p2made/yii2-sb-admin-theme/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
 [![Latest Stable Version](https://poser.pugx.org/p2made/yii2-sb-admin-theme/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 [![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-sb-admin-theme/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
-[![Dependency Status](https://www.versioneye.com/user/projects/56e14998df573d00352c693b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e14998df573d00352c693b)
 
 ---
 
