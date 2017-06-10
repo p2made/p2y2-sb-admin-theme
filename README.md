@@ -1,5 +1,14 @@
-P2 SB Admin Theme v2.5.0
+P2 SB Admin Theme v2.5.1
 =================
+
+[![License](https://poser.pugx.org/p2made/yii2-sb-admin-theme/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Total Downloads](https://poser.pugx.org/p2made/yii2-sb-admin-theme/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Monthly Downloads](https://poser.pugx.org/p2made/yii2-sb-admin-theme/d/monthly)](https://packagist.org/packages/p2made/yii2-p2y2-things)
+[![Latest Stable Version](https://poser.pugx.org/p2made/yii2-sb-admin-theme/v/stable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Latest Unstable Version](https://poser.pugx.org/p2made/yii2-sb-admin-theme/v/unstable)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
+[![Dependency Status](https://www.versioneye.com/user/projects/56e14998df573d00352c693b/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56e14998df573d00352c693b)
+
+---
 
 SB Admin from [Start Bootstrap](http://startbootstrap.com/) as a backend UI for Yii 2 Framework.
 
@@ -22,19 +31,19 @@ The preferred way to install P2 SB Admin Theme is through [composer](http://getc
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-sb-admin-theme "^2.4"
+composer require p2made/yii2-sb-admin-theme "^2.5"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-sb-admin-theme "^2.4"
+php composer.phar require p2made/yii2-sb-admin-theme "^2.5"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-sb-admin-theme": "^2.4"
+	"p2made/yii2-sb-admin-theme": "^2.5"
 ```
 
 to the requires section of your `composer.json` file & P2 SB Admin Theme will be installed next time you run `composer update`.
