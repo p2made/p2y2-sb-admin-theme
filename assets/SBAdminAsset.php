@@ -23,7 +23,7 @@ class SBAdminAsset extends \p2m\assets\base\P2AssetBundle
 {
 	protected $version = '0.0.0';
 
-	private $resourceData = array(
+	protected $resourceData = array(
 
 		'published' => [
 			'sourcePath' => '@vendor/p2made/yii2-sb-admin-theme/assets/lib',
