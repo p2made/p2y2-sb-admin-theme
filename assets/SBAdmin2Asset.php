@@ -21,7 +21,7 @@ namespace p2m\sbAdmin\assets;
 
 class SBAdmin2Asset extends \p2m\assets\base\P2AssetBundle
 {
-	protected $resourceData = array(
+	private $resourceData = array(
 
 		'published' => [
 			'sourcePath' => '@vendor/p2made/yii2-sb-admin-theme/assets/lib',
