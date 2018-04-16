@@ -1,4 +1,4 @@
-P2 SB Admin Theme v2.5.1
+P2 SB Admin Theme v2.5.2-beta
 =================
 
 [![License](https://poser.pugx.org/p2made/yii2-sb-admin-theme/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
