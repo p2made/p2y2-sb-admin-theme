@@ -21,7 +21,7 @@
 		"source": "https://github.com/p2made/yii2-sb-admin-theme"
 	},
 
-	"version": "2.5.x-dev",
+	"version": "3.0.0-dev",
 	"minimum-stability": "dev",
 
 	"require": {
