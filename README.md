@@ -1,4 +1,4 @@
-P2 SB Admin Theme v2.5.2-beta
+P2 SB Admin Theme v4.0.0-dev
 =================
 
 [![License](https://poser.pugx.org/p2made/yii2-sb-admin-theme/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
@@ -30,19 +30,19 @@ The preferred way to install P2 SB Admin Theme is through [composer](http://getc
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-sb-admin-theme "^2.5"
+composer require p2made/yii2-sb-admin-theme "~4.0"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-sb-admin-theme "^2.5"
+php composer.phar require p2made/yii2-sb-admin-theme "~4.0"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-sb-admin-theme": "^2.5"
+	"p2made/yii2-sb-admin-theme": "~4.0"
 ```
 
 to the requires section of your `composer.json` file & P2 SB Admin Theme will be installed next time you run `composer update`.
