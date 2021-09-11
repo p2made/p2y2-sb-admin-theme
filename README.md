@@ -1,5 +1,4 @@
-P2 SB Admin Theme v4.0.0-dev
-=================
+# P2 SB Admin Theme 5.0.0
 
 [![License](https://poser.pugx.org/p2made/p2y2-sb-admin-theme/license)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
 [![Total Downloads](https://poser.pugx.org/p2made/p2y2-sb-admin-theme/downloads)](https://packagist.org/packages/p2made/yii2-p2y2-things-demo)
@@ -16,15 +15,13 @@ which registers the CSS & JS files for the SB Admin 2 UI.
 
 It declares [`yii2-p2y2-things`](https://github.com/p2made/yii2-p2y2-things) as a dependancy.
 
-¡¡ IMPORTANT !!
-===============
+# ¡¡ IMPORTANT !!
 
 Version 2.0.0 of all my Yii2 add-ons marks a breaking change where I've shortened my namespaces.
 In P2 SB Admin Theme `p2made\theme\sbAdmin\rest\of\namespace` is now `p2m\sbAdmin\rest\of\namespace`.
 In the rest of my Yii2 add-ons `p2made\rest\of\namespace` is now `p2m\rest\of\namespace`.
 
-Installation
-------------
+## Installation
 
 The preferred way to install P2 SB Admin Theme is through [composer](http://getcomposer.org/download/).
 Depending on your composer installation, run *one* of the following commands:
@@ -49,8 +46,7 @@ to the requires section of your `composer.json` file & P2 SB Admin Theme will be
 
 The files are installed via Yii's recommended usage of the `fxp/composer-asset-plugin`.
 
-Quick Start
------------
+## Quick Start
 
 Once the extension is installed, you can have a *preview* by reconfiguring the path mappings of the view component:
 
@@ -84,8 +80,7 @@ To view pages in `site/pages/` you need to modify `actions()` in the `SiteContro
 	}
 ```
 
-And then...
------------
+## And then...
 
 P2 SB Admin Theme uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-things) which requires some Yii 2 assets to be nullified to avoid conflicts through double loading. Modify `common/config/main.php` with...
 
@@ -114,8 +109,7 @@ P2 SB Admin Theme uses [P2Y2Things](https://github.com/p2made/yii2-p2y2-things) 
 	],
 ```
 
-Customization
--------------
+## Customization
 
 - Copy files from `vendor/p2made/p2y2-sb-admin-theme/views-preview/sb-admin-2` (or other theme) to `@app/views`.
 - Remove the custom `view` configuration from your application by deleting the path mappings, if you have made them before.
@@ -135,15 +129,13 @@ If you want to use the layout files *without* modifying them, then use this slig
 	],
 ```
 
-Known Issues
-------------
+## Known Issues
 
 - sample pages in `site/pages/` return a 403 error when viewed in the Yii2 Advanced backend. This doesn't happen in the Yii2 Advanced frontend.
 
 I've not been able to resolve this. It may be an issue on my development machine.
 
-To Do
------
+## To Do
 
 - Calendar page.
 - Original SB Admin.
